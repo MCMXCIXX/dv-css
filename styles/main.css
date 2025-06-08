@@ -516,7 +516,7 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
   display: flex;
   width: 0.625rem;
   height: 0.625rem;
-  background-image: url(../../icons/select-region-arrow.svg);
+  background-image: url(../icons/select-region-arrow.svg);
   right: 1.5625rem;
   top: 50%;
   transform: translateY(-50%);
@@ -805,7 +805,7 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
 }
 
 .last-screen {
-  background-image: url(../../images/last-screen/last-screen-bg.jpg);
+  background-image: url(../images/last-screen/last-screen-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1.8125rem 0.9375rem;
@@ -913,14 +913,14 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
   display: flex;
   width: 25px;
   height: 25px;
-  background-image: url(../../icons/tick.png);
+  background-image: url(../icons/tick.png);
   top: 0;
   left: -2.1875rem;
 }
 .info-change__list--check li::before {
   width: 1.6875rem;
   height: 2.25rem;
-  background-image: url(../../icons/change-vector.svg);
+  background-image: url(../icons/change-vector.svg);
 }
 .info-change__card {
   padding: 1.5625rem;
@@ -977,7 +977,7 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
   content: "";
   width: 1.5625rem;
   height: 1.5625rem;
-  background-image: url(../../icons/tick.png);
+  background-image: url(../icons/tick.png);
   background-size: cover;
 }
 .info-change__card-text {
