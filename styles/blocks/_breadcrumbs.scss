@@ -1,0 +1,12 @@
+@use "../helpers" as *;
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: clamp (rem(16) rem(15) rem(14));
+  color: #bfaaf8;
+  gap: rem(18);
+  & span:last-child {
+    color: #a081f5;
+  }
+}

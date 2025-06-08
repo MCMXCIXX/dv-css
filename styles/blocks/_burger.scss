@@ -1,0 +1,12 @@
+@use "../helpers" as *;
+
+.burger {
+    display: none;
+    align-items: center;
+    &__close-icon {
+        // display: none;
+    }
+    @include tablet{
+        display: flex;
+    }
+}

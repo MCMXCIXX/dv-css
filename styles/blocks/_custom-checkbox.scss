@@ -1,0 +1,11 @@
+.custom-checkbox {
+  &__checked {
+    display: none;
+  }
+}
+input:checked ~ .custom-checkbox .custom-checkbox__unchecked {
+  display: none;
+}
+input:checked ~ .custom-checkbox .custom-checkbox__checked {
+  display: flex;
+}

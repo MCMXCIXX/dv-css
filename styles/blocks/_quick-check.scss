@@ -1,0 +1,31 @@
+@use "../helpers" as *;
+
+.quick-check {
+  border-radius: 0 rem(100) rem(100) 0;
+  background: linear-gradient(-15deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
+  padding-bottom: rem(200);
+  margin-bottom: rem(-200);
+  &__title {
+    font-weight: 700;
+    @include fluid-text(68, 40);
+    text-align: center;
+  }
+  &__decr {
+    max-width: rem(1420);
+    margin: 0 auto;
+    @include fluid-text(26, 20);
+    line-height: 131%;
+    text-align: center;
+    padding: rem(16);
+  }
+  &__main-form {
+    padding: rem(68) 0;
+    color: #fff;
+    & .main-form__placeholder {
+      color: #fff;
+    }
+    & .main-form__checkbox {
+      color: #000;
+    }
+  }
+}

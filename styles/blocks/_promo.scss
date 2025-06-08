@@ -1,0 +1,36 @@
+@use "../helpers" as *;
+.promo {
+  background-color: #000;
+  padding: rem(132) 0 rem(21) 0;
+  @include tablet {
+    padding: rem(60) 0 rem(10) 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: clamp(rem(26), 4vw, rem(46));
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+    max-width: rem(1121);
+    margin: 0 auto;
+
+  }
+  &__subtitle {
+    padding-top: rem(20);
+    font-weight: 500;
+    font-size: clamp(rem(16), rem(21), rem(25));
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+    max-width: rem(888);
+    margin: 0 auto;
+  }
+  &__main-form {
+    padding: rem(66) 0 rem(150) 0;
+    @include tablet {
+      padding: rem(30) 0 rem(70) 0;
+    }
+  }
+}
+

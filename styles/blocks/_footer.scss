@@ -1,0 +1,40 @@
+@use "../helpers" as *;
+.footer {
+  padding: rem(40) 0 rem(30) 0;
+  color: #fff;
+  background: #171b2c;
+  border-radius: rem(100) rem(100) 0 0;
+  @media (max-width: 1600px) {
+    border-radius: rem(50) rem(50) 0 0;
+  }
+  &__columns {
+    padding: rem(40) 0;
+    display: flex;
+    justify-content: space-between;
+    gap: rem(30);
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+  }
+  &__title {
+    font-weight: 400;
+    font-size: rem(20);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+  &__line {
+    border: rem(1) solid #444;
+    margin: 0 rem(16);
+  }
+  &__contacts {
+    padding: rem(30);
+    @include tablet {
+        padding: rem(30) 0;
+    }
+
+  }
+}

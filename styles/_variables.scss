@@ -1,0 +1,13 @@
+@use "helpers" as *;
+
+:root {
+  --font-family: "Onest", sans-serif;
+  --second-family: "Lato", sans-serif;
+  --third-family: "Inter", sans-serif;
+
+
+  --container-width: #{rem(1420)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+}

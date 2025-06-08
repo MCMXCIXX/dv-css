@@ -1,0 +1,113 @@
+@use "../helpers" as *;
+.header {
+  background-color: #000;
+  padding-top: rem(24);
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: -1px;
+  @include tablet {
+    padding-top: rem(12);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(30);
+    padding: rem(20) rem(50);
+    background: rgba(18, 18, 42, 0.6);
+    border-radius: rem(100);
+    @include tablet {
+      padding: rem(10) rem(20);
+    }
+  }
+  &__menu-wrapper {
+    display: flex;
+    gap: rem(32);
+    @include tablet {
+      display: none;
+    }
+    &.is-open {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+      background-color: #000;
+      left: 0;
+      right: 0;
+      top: rem(89);
+      z-index: 1;
+      & .header__nav {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+      }
+      & .header__list {
+        flex-direction: column;
+        padding: 0;
+        gap: rem(10);
+      }
+      & .header__contacts {
+        flex-direction: column;
+        gap: rem(10);
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: rem(32);
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    gap: rem(22);
+    align-items: center;
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: rem(32);
+  }
+  &__contacts--mobile {
+    display: none;
+    @include tablet {
+      display: flex;
+      flex-grow: 1;
+      justify-content: end;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  &__socials {
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
+  &__city {
+    display: flex;
+    gap: rem(5);
+    font-size: rem(14);
+    color: #00bf80;
+  }
+}
+.container {
+}
+.header__container {
+}
+.logo {
+}
+.logo__image {
+}
+.nav {
+}
+.nav__list {
+}
+.header__contacts {
+}
+.header__phone {
+}
+.header__city {
+}

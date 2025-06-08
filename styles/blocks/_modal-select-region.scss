@@ -1,0 +1,29 @@
+
+@use "../helpers" as *;
+
+.modal-select-region {
+    position: fixed;
+    inset: 0;
+    background: rgba($color: #000000, $alpha: 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    &__inner {
+        background: #fff;
+        border-radius: rem(20);
+        padding: rem(35);
+        font-size: rem(30);
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+    }
+    &__item {
+        cursor: pointer;
+        padding: rem(10) rem(20);
+        background: #b0e3d0;
+        border-radius: rem(10);
+    }
+}
