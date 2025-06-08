@@ -24,7 +24,7 @@ dv-css — это современный лендинг для проверки 
 
 1. Клонируйте репозиторий:
    ```
-   git clone https://github.com/your-username/dv-css.git
+   git clone https://github.com/MCMXCIXX/dv-css.git
    cd dv-css
    ```
 
