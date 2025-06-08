@@ -70,15 +70,11 @@
     @include tablet {
       max-width: rem(300);
       margin: 0 auto;
+      height: auto;
     }
     & input {
       display: none;
     }
   }
 }
-.promo__main-form {
-}
-.main-form__inner {
-}
-.main-form__checkbox {
-}
+

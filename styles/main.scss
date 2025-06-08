@@ -1,16 +1,18 @@
-@use 'fonts';
-@use 'variables';
-@use 'utils';
-@use 'global';
+@use "fonts";
+@use "variables";
+@use "utils";
+@use "global";
 
-
-@use 'blocks/promo';
-@use 'blocks/header';
-@use 'blocks/burger';
-@use 'blocks/main-form';
-@use 'blocks/custom-checkbox';
-@use 'blocks/breadcrumbs';
-@use 'blocks/footer';
-@use 'blocks/contacts';
-@use 'blocks/modal-select-region';
-@use 'blocks/quick-check';
+@use "blocks/promo";
+@use "blocks/header";
+@use "blocks/burger";
+@use "blocks/main-form";
+@use "blocks/custom-checkbox";
+@use "blocks/breadcrumbs";
+@use "blocks/footer";
+@use "blocks/contacts";
+@use "blocks/modal-select-region";
+@use "blocks/quick-check";
+@use "blocks/check-list";
+@use "blocks/last-screen";
+@use "blocks/info-change";

@@ -1,0 +1,52 @@
+@use "../helpers" as *;
+.last-screen {
+  background-image: url(../../images/last-screen/last-screen-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: rem(29) rem(15);
+  display: grid;
+  grid-template-columns: 70% 30%;
+  border-radius: rem(35);
+  @media (max-width: 1200px) {
+    gap: rem(10);
+    grid-template-columns: 1fr
+  }
+  &__title {
+    font-weight: 600;
+    @include fluid-text(33, 25);
+    line-height: 120%;
+    color: #202020;
+  }
+  &__descr {
+    font-weight: 400;
+    @include fluid-text(20, 16);
+  }
+  &__list {
+    padding-left: rem(30);
+    list-style-type: disc;
+  }
+  &__right {
+    display: flex;
+    align-items: end;
+  }
+  &__color-red {
+    font-weight: 800;
+    color: #f80200;
+  }
+  &__form {
+    max-width: rem(795);
+    margin: 0;
+    & .main-form__placeholder {
+        color: #fff;
+    }
+    & .main-form__checkbox {
+        color: #000;
+    }
+  }
+  &__form input {
+    width: rem(175);
+    @include tablet {
+        width: 100%;
+    }
+  }
+}

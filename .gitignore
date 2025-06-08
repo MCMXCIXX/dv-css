@@ -1,0 +1,27 @@
+# Игнорировать node_modules, временные файлы, кэш, системные и IDE-файлы
+node_modules/
+dist/
+build/
+*.log
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+.env.*
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.map
+# Игнорировать скомпилированные CSS и карты
+styles/*.css
+styles/*.css.map
+# Игнорировать кэш браузера
+.cache/
+# Игнорировать файлы ОС
+*.swp
+*.bak
+# Игнорировать локальные настройки
+local.settings.json

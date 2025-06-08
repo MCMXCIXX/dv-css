@@ -1,0 +1,118 @@
+@use "../helpers" as *;
+
+.check-list {
+  color: #202020;
+  background: #3c3c3c;
+  padding-bottom: rem(200);
+  margin-bottom: rem(-200);
+  padding-top: rem(36);
+  border-radius: rem(100) rem(100) 0 0;
+  @include tablet {
+    padding-top: rem(20);
+    border-radius: rem(50) rem(50) 0 0;
+  }
+  &__title {
+    font-weight: 600;
+    @include fluid-text(68, 27);
+    line-height: 110%;
+    text-align: center;
+    color: #fefdfd;
+    max-width: rem(1264);
+    margin: 0 auto;
+  }
+  &__descr {
+    font-weight: 400;
+    padding-top: rem(33);
+    @include fluid-text(26, 18);
+    text-align: center;
+    color: #fefdfd;
+    max-width: rem(1264);
+    margin: 0 auto;
+  }
+  &__form {
+    padding-top: rem(80);
+    @include tablet {
+      padding-top: rem(40);
+    }
+  }
+  &__block {
+    padding: rem(33) rem(45) rem(10) rem(45);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: rem(12);
+    min-height: rem(500);
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      padding: rem(12);
+    }
+  }
+  &__block-title {
+    font-weight: 600;
+    @include fluid-text(35, 25);
+    color: #202020;
+  }
+  &__block-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #5a5a5a;
+    padding-top: 22px;
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: rem(7);
+    flex-grow: 1;
+  }
+  &__item label {
+    cursor: pointer;
+  }
+  &__item ul {
+    padding-left: rem(30);
+    list-style: disc;
+  }
+  &__checkbox input {
+    display: none;
+  }
+  &__checkbox {
+    display: flex;
+    gap: rem(10);
+    font-weight: 400;
+    font-size: rem(14);
+    color: #202020;
+    & .custom-checkbox {
+      height: rem(22);
+    }
+  }
+  &__button {
+    border-radius: rem(8);
+    background: #7b4cfa;
+    padding: rem(6) rem(58);
+    font-weight: 600;
+    font-size: rem(14);
+    color: #fff;
+    @include tablet {
+      padding: rem(6) rem(38);
+    }
+  }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(4);
+    padding-top: rem(20);
+  }
+  &__pagination-item {
+    display: flex;
+    border-radius: 100%;
+    background-color: #7b4cfa;
+    width: 14px;
+    height: 14px;
+  }
+  &__pagination-item.active {
+    width: 20px;
+    height: 20px;
+    background-color: #251d3b;
+  }
+}

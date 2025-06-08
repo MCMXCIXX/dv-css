@@ -1,14 +1,21 @@
 @use "../helpers" as *;
 
 .quick-check {
-  border-radius: 0 rem(100) rem(100) 0;
+  border-radius: rem(100) rem(100) 0 0;
   background: linear-gradient(-15deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
   padding-bottom: rem(200);
   margin-bottom: rem(-200);
+  @include tablet {
+    border-radius: rem(50) rem(50) 0 0;
+  }
   &__title {
     font-weight: 700;
-    @include fluid-text(68, 40);
+    @include fluid-text(68, 34);
     text-align: center;
+    padding-top: rem(70);
+    @include tablet {
+      padding-top: rem(30);
+    }
   }
   &__decr {
     max-width: rem(1420);
@@ -21,6 +28,9 @@
   &__main-form {
     padding: rem(68) 0;
     color: #fff;
+    @include tablet {
+      padding: rem(28) 0;
+    }
     & .main-form__placeholder {
       color: #fff;
     }

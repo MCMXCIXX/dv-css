@@ -1,8 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Onest:wght@100..900&display=swap");
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/Onest-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/Onest-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/Onest-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/Onest-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/Onest-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --font-family: "Onest", sans-serif;
-  --second-family: "Lato", sans-serif;
-  --third-family: "Inter", sans-serif;
   --container-width: 88.75rem;
   --container-padding-x: 1rem;
   --transition-duration: 0.2s;
@@ -43,6 +75,11 @@
   color: #fff;
   background: linear-gradient(90deg, #7b4cfa 0%, #1edd90 100%);
   padding: 0 0.3125rem;
+  white-space: nowrap;
+}
+
+.color-red {
+  color: #df1a1a;
 }
 
 html.is-lock {
@@ -315,6 +352,7 @@ main {
   .main-form__checkbox {
     max-width: 18.75rem;
     margin: 0 auto;
+    height: auto;
   }
 }
 .main-form__checkbox input {
@@ -346,7 +384,7 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
 }
 
 .footer {
-  padding: 2.5rem 0 1.875rem 0;
+  padding: 2.5rem 0 0 0;
   color: #fff;
   background: #171b2c;
   border-radius: 6.25rem 6.25rem 0 0;
@@ -387,6 +425,39 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
 @media (max-width: 1023.98px) {
   .footer__contacts {
     padding: 1.875rem 0;
+  }
+}
+.footer__city {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #bfaaf8;
+  column-gap: 1.25rem;
+}
+.footer__city-name {
+  cursor: pointer;
+  margin-bottom: 0.625rem;
+}
+.footer__city-name.active {
+  color: #a081f5;
+}
+.footer__city-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  color: #fff;
+  margin: 0;
+}
+.footer__header {
+  background: #171b2c;
+  padding-top: 0;
+}
+.footer__header .header__container {
+  background: transparent;
+}
+@media (max-width: 767.98px) {
+  .footer__header .header__container {
+    justify-content: center;
   }
 }
 
@@ -563,15 +634,26 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
 }
 
 .quick-check {
-  border-radius: 0 6.25rem 6.25rem 0;
+  border-radius: 6.25rem 6.25rem 0 0;
   background: linear-gradient(-15deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
   padding-bottom: 12.5rem;
   margin-bottom: -12.5rem;
 }
+@media (max-width: 1023.98px) {
+  .quick-check {
+    border-radius: 3.125rem 3.125rem 0 0;
+  }
+}
 .quick-check__title {
   font-weight: 700;
-  font-size: clamp(2.5rem, 2rem + 2.5vw, 4.25rem);
+  font-size: clamp(2.125rem, 1.5178571429rem + 3.0357142857vw, 4.25rem);
   text-align: center;
+  padding-top: 4.375rem;
+}
+@media (max-width: 1023.98px) {
+  .quick-check__title {
+    padding-top: 1.875rem;
+  }
 }
 .quick-check__decr {
   max-width: 88.75rem;
@@ -585,11 +667,321 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
   padding: 4.25rem 0;
   color: #fff;
 }
+@media (max-width: 1023.98px) {
+  .quick-check__main-form {
+    padding: 1.75rem 0;
+  }
+}
 .quick-check__main-form .main-form__placeholder {
   color: #fff;
 }
 .quick-check__main-form .main-form__checkbox {
   color: #000;
+}
+
+.check-list {
+  color: #202020;
+  background: #3c3c3c;
+  padding-bottom: 12.5rem;
+  margin-bottom: -12.5rem;
+  padding-top: 2.25rem;
+  border-radius: 6.25rem 6.25rem 0 0;
+}
+@media (max-width: 1023.98px) {
+  .check-list {
+    padding-top: 1.25rem;
+    border-radius: 3.125rem 3.125rem 0 0;
+  }
+}
+.check-list__title {
+  font-weight: 600;
+  font-size: clamp(1.6875rem, 0.9553571429rem + 3.6607142857vw, 4.25rem);
+  line-height: 110%;
+  text-align: center;
+  color: #fefdfd;
+  max-width: 79rem;
+  margin: 0 auto;
+}
+.check-list__descr {
+  font-weight: 400;
+  padding-top: 2.0625rem;
+  font-size: clamp(1.125rem, 0.9821428571rem + 0.7142857143vw, 1.625rem);
+  text-align: center;
+  color: #fefdfd;
+  max-width: 79rem;
+  margin: 0 auto;
+}
+.check-list__form {
+  padding-top: 5rem;
+}
+@media (max-width: 1023.98px) {
+  .check-list__form {
+    padding-top: 2.5rem;
+  }
+}
+.check-list__block {
+  padding: 2.0625rem 2.8125rem 0.625rem 2.8125rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 0.75rem;
+  min-height: 31.25rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1023.98px) {
+  .check-list__block {
+    padding: 0.75rem;
+  }
+}
+.check-list__block-title {
+  font-weight: 600;
+  font-size: clamp(1.5625rem, 1.3839285714rem + 0.8928571429vw, 2.1875rem);
+  color: #202020;
+}
+.check-list__block-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #5a5a5a;
+  padding-top: 22px;
+}
+.check-list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4375rem;
+  flex-grow: 1;
+}
+.check-list__item label {
+  cursor: pointer;
+}
+.check-list__item ul {
+  padding-left: 1.875rem;
+  list-style: disc;
+}
+.check-list__checkbox input {
+  display: none;
+}
+.check-list__checkbox {
+  display: flex;
+  gap: 0.625rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #202020;
+}
+.check-list__checkbox .custom-checkbox {
+  height: 1.375rem;
+}
+.check-list__button {
+  border-radius: 0.5rem;
+  background: #7b4cfa;
+  padding: 0.375rem 3.625rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+}
+@media (max-width: 1023.98px) {
+  .check-list__button {
+    padding: 0.375rem 2.375rem;
+  }
+}
+.check-list__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  padding-top: 1.25rem;
+}
+.check-list__pagination-item {
+  display: flex;
+  border-radius: 100%;
+  background-color: #7b4cfa;
+  width: 14px;
+  height: 14px;
+}
+.check-list__pagination-item.active {
+  width: 20px;
+  height: 20px;
+  background-color: #251d3b;
+}
+
+.last-screen {
+  background-image: url(../../images/last-screen/last-screen-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.8125rem 0.9375rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  border-radius: 2.1875rem;
+}
+@media (max-width: 1200px) {
+  .last-screen {
+    gap: 0.625rem;
+    grid-template-columns: 1fr;
+  }
+}
+.last-screen__title {
+  font-weight: 600;
+  font-size: clamp(1.5625rem, 1.4196428571rem + 0.7142857143vw, 2.0625rem);
+  line-height: 120%;
+  color: #202020;
+}
+.last-screen__descr {
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9285714286rem + 0.3571428571vw, 1.25rem);
+}
+.last-screen__list {
+  padding-left: 1.875rem;
+  list-style-type: disc;
+}
+.last-screen__right {
+  display: flex;
+  align-items: end;
+}
+.last-screen__color-red {
+  font-weight: 800;
+  color: #f80200;
+}
+.last-screen__form {
+  max-width: 49.6875rem;
+  margin: 0;
+}
+.last-screen__form .main-form__placeholder {
+  color: #fff;
+}
+.last-screen__form .main-form__checkbox {
+  color: #000;
+}
+.last-screen__form input {
+  width: 10.9375rem;
+}
+@media (max-width: 1023.98px) {
+  .last-screen__form input {
+    width: 100%;
+  }
+}
+
+.info-change {
+  background: linear-gradient(-15deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
+  padding-bottom: 12.5rem;
+  margin-bottom: -12.5rem;
+}
+.info-change__title {
+  font-weight: 600;
+  font-size: clamp(1.875rem, 1.1964285714rem + 3.3928571429vw, 4.25rem);
+  line-height: 120%;
+  color: #000;
+  text-align: center;
+}
+.info-change__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 1023.98px) {
+  .info-change__row {
+    grid-template-columns: 1fr;
+  }
+  .info-change__row--revers {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.info-change__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-change__list {
+  padding-left: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+@media (max-width: 1023.98px) {
+  .info-change__list {
+    gap: 0.625rem;
+  }
+}
+.info-change__list li {
+  position: relative;
+}
+.info-change__list li::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-image: url(../../icons/tick.png);
+  top: 0;
+  left: -2.1875rem;
+}
+.info-change__list--check li::before {
+  width: 1.6875rem;
+  height: 2.25rem;
+  background-image: url(../../icons/change-vector.svg);
+}
+.info-change__card {
+  padding: 1.5625rem;
+  font-size: clamp(1.1875rem, 1.0625rem + 0.625vw, 1.625rem);
+  display: flex;
+  flex-direction: column;
+}
+.info-change__card img {
+  width: 100%;
+  max-width: 43.75rem;
+  margin: 0 auto;
+}
+.info-change__card--radius {
+  box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.25);
+  background: #fafafa;
+  border-radius: 1.25rem;
+  height: 100%;
+  overflow: hidden;
+  gap: 0.625rem;
+}
+.info-change__card--radius .info-change__card-text {
+  margin-left: 2.5rem;
+}
+.info-change__card--radius div:last-child {
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+@media (max-width: 1023.98px) {
+  .info-change__card {
+    padding: 0.9375rem;
+  }
+}
+.info-change__card--image {
+  padding: 0;
+}
+.info-change__card-title {
+  font-weight: 800;
+  font-size: clamp(1.6875rem, 1.4553571429rem + 1.1607142857vw, 2.5rem);
+  margin: 0;
+}
+.info-change__card-subtitle {
+  position: relative;
+  font-weight: 700;
+  font-size: clamp(1.1875rem, 1.0625rem + 0.625vw, 1.625rem);
+  margin: 0;
+  margin-left: 2.5rem;
+}
+.info-change__card-subtitle::after {
+  position: absolute;
+  left: -2.5rem;
+  top: 0;
+  content: "";
+  width: 1.5625rem;
+  height: 1.5625rem;
+  background-image: url(../../icons/tick.png);
+  background-size: cover;
+}
+.info-change__card-text {
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

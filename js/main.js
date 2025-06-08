@@ -1,8 +1,10 @@
 import Header from "./Header.js";
 import Footer from "./Footer.js";
+import CheckList from "./CheckList.js";
 
 new Header();
 new Footer();
+new CheckList();
 
 document.querySelectorAll(".input").forEach((input) => {
   const span = input.nextElementSibling;

@@ -1,0 +1,122 @@
+@use "../helpers" as *;
+.info-change {
+  background: linear-gradient(-15deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
+  padding-bottom: rem(200);
+  margin-bottom: rem(-200);
+  &__title {
+    font-weight: 600;
+    @include fluid-text(68, 30);
+    line-height: 120%;
+    color: #000;
+    text-align: center;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: rem(40);
+    margin-bottom: rem(40);
+    @include tablet {
+      grid-template-columns: 1fr;
+      &--revers {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__list {
+    padding-left: rem(30);
+    display: flex;
+    flex-direction: column;
+    gap: rem(25);
+    @include tablet {
+      gap: rem(10);
+    }
+    & li {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        display: flex;
+        width: 25px;
+        height: 25px;
+        background-image: url(../../icons/tick.png);
+        top: 0;
+        left: rem(-35);
+      }
+    }
+    &--check li::before {
+      width: rem(27);
+      height: rem(36);
+      background-image: url(../../icons/change-vector.svg);
+    }
+  }
+  &__card {
+    & img {
+      width: 100%;
+      max-width: rem(700);
+      margin: 0 auto;
+    }
+    padding: rem(25);
+    @include fluid-text(26, 19);
+    
+    display: flex;
+    flex-direction: column;
+    &--radius {
+      box-shadow: 0 4px 23px 0 rgba(0, 0, 0, 0.25);
+      background: #fafafa;
+      border-radius: rem(20);
+      height: 100%;
+      overflow: hidden;
+      gap: rem(10);
+      @include tablet {
+        
+      }
+      & .info-change__card-text {
+        margin-left: rem(40);
+      }
+      & div:last-child {
+        justify-content: end;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+    }
+    @include tablet {
+      padding: rem(15);
+    }
+    &--image {
+      padding: 0;
+    }
+    &-title {
+      font-weight: 800;
+      @include fluid-text(40, 27);
+      margin: 0;
+    }
+    &-subtitle {
+      position: relative;
+      font-weight: 700;
+      @include fluid-text(26, 19);
+      margin: 0;
+      margin-left: rem(40);
+      &::after {
+        position: absolute;
+        left: rem(-40);
+        top: 0;
+        content: "";
+        width: rem(25);
+        height: rem(25);
+        background-image: url(../../icons/tick.png);
+        background-size: cover;
+      }
+    }
+    &-text {
+      margin: 0;
+    }
+  }
+}
