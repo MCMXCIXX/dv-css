@@ -5,6 +5,16 @@
   color: #fff;
   font-weight: 500;
   margin-bottom: -1px;
+  &--transparent {
+    background-color: transparent;
+    
+  }
+  &-wrapper{
+    &--person{
+      background-image: url(../images/person/bg-person.jpg);
+      background-size: cover;
+    }
+  }
   @include tablet {
     padding-top: rem(12);
   }
