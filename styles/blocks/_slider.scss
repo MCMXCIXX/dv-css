@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+
+.slider {
+    overflow: hidden;
+    &__top{
+        display: flex;
+        gap: rem(15);
+        align-items: center;
+    }
+    &__button {
+        &--prev {
+            color: #000;
+            opacity: 0.5;
+        }
+        &--next {
+            color: #000;
+        }
+    }
+    &__list {
+        display: flex;
+        gap: rem(20);
+    }
+}

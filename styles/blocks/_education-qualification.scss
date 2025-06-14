@@ -1,0 +1,45 @@
+@use "../helpers" as *;
+.education-qualification {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(48);
+  padding: rem(168) 0 rem(58) 0;
+
+  border-radius: rem(20);
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(0) 0 rem(28) 0;
+  }
+  @include mobile {
+    gap: 0;
+    background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
+    padding-bottom: rem(40);
+    margin-bottom: rem(-40);
+  }
+  &__item {
+    padding: rem(13) rem(24);
+    background: #fafafa;
+    border-radius: 20px;
+    @include tablet {
+      max-width: rem(610);
+    }
+    @include mobile {
+      background-color: transparent;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+  &__text {
+    line-height: 140%;
+  }
+}

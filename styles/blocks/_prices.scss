@@ -1,0 +1,39 @@
+@use "../helpers" as *;
+.prices {
+  @include mobile {
+    padding: 0 rem(16);
+    margin-top: -1px;
+    padding-bottom: rem(200);
+    margin-bottom: rem(-199);
+    background: #171b2c;
+    color: #fff;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    @include mobile {
+      margin: 0;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    font-weight: 400;
+    @include fluid-text(16, 13);
+    line-height: 140%;
+    padding: rem(10);
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: rem(21);
+    @include mobile-above {
+      &:nth-child(even) {
+        background: #fafafa;
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

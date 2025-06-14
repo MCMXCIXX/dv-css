@@ -1,27 +1,44 @@
-# Игнорировать node_modules, временные файлы, кэш, системные и IDE-файлы
+# Node.js
 node_modules/
-dist/
-build/
-*.log
-*.tmp
-*.cache
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# VSCode
+.vscode/
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Build
+/dist/
+/build/
+*.log
+
+# CSS/SCSS
+*.css.map
+
+# Сборка и временные файлы
+*.tmp
+*.temp
+
+# Системные файлы
 .idea/
-.vscode/
-.env
-.env.*
 *.sublime-workspace
 *.sublime-project
-*.code-workspace
-*.map
-# Игнорировать скомпилированные CSS и карты
-styles/*.css
-styles/*.css.map
-# Игнорировать кэш браузера
+
+# Кэш браузера
 .cache/
-# Игнорировать файлы ОС
-*.swp
-*.bak
-# Игнорировать локальные настройки
-local.settings.json
+
+# Сборка
+*.zip
+*.tar.gz
+
+# Личные настройки
+.env
+.env.*
+
+# Сгенерированные файлы
+*.min.js
+*.min.css
