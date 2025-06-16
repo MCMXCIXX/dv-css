@@ -29,6 +29,7 @@
 @use "blocks/person-modal";
 @use "blocks/cookie-banner";
 @use "blocks/not-found";
+@use "blocks/contacts-form";
 
 .person-main {
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 14.4%, #fff 25.4%);

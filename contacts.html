@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Ой! Страница уплыла.</title>
+    <title>Политика конфиденциальности</title>
     <link
       rel="stylesheet"
       href="./styles/main.css"
@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <main class="not-found-main">
+    <div class="header-wrapper header-wrapper--person">
       <header
         class="header header--transparent"
         id="top"
@@ -169,21 +169,126 @@
           </div>
         </div>
       </header>
-      <div class="not-found">
-        <div class="not-found__inner">
-          <div class="not-found__text">
-            <h1 class="not-found__title">Ой! Страница уплыла.</h1>
-            <p class="not-found__subtitle">Гусь грустит, а мы чиним.</p>
-            <a
-              href="/"
-              class="not-found__link"
-              >Вернуться на главную</a
-            >
-          </div>
+      <div class="breadcrumbs-center breadcrumbs-center--bottom">
+        <h2 class="breadcrumbs-center__title">Контакты</h2>
+        <div class="breadcrumbs">
+          <span><a href="/">Главная</a></span
+          ><svg
+            width="7"
+            height="6"
+            viewBox="0 0 7 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.0985 3L0.902344 6L0.902344 4.76837e-07L6.0985 3Z"
+              fill="#BFAAF8"
+            />
+          </svg>
+          <span><a href="">Контакты</a></span>
         </div>
       </div>
+    </div>
+    <main class="">
+      <section class="contacts-form-block">
+        <div class="contacts-form-block__container">
+          <div class="contacts-form-block__info">
+            <h2 class="contacts-form-block__title">Центр Сопровождения Сайтов</h2>
+            <div class="contacts-form-block__contacts">
+              <div class="contacts-form-block__subtitle">Наши контакты</div>
+              <ul class="contacts-form-block__list">
+                <li>
+                  <img
+                    src="icons/call-tel.png"
+                    alt=""
+                  />
+                  +7-924-764-04-44
+                </li>
+                <li>
+                  <img
+                    src="icons/call-mess.png"
+                    alt=""
+                  />
+                  sale@dv-css.ru
+                </li>
+                <li>
+                  <img
+                    src="icons/location.svg"
+                    alt=""
+                  />
+                  г. Елизовский, ул. Школьников, 27 офис 24
+                </li>
+              </ul>
+            </div>
+            <div class="contacts-form-block__worktime">
+              <div class="contacts-form-block__subtitle">Режим работы:</div>
+              <div>Пн–Пт: 09:00 – 18:00<br />Суб–Вск: Выходной<br />Поддержка экстренная — 24/7 по заявке</div>
+            </div>
+            <div class="contacts-form-block__buttons">
+              <div class="header__socials">
+                <a
+                  href="https://t.me/brash_aleks"
+                  target="_blank"
+                  ><img
+                    src="./icons/telegram-icon.svg"
+                    alt=""
+                /></a>
+                <a
+                  href="https://wa.me/79312040444"
+                  target="_blank"
+                  ><img
+                    src="./icons/whats-up-icon.svg"
+                    alt=""
+                /></a>
+              </div>
+              <a
+                href="#"
+                class="contacts-form-block__download-btn"
+              >
+                Скачать типовой договор
+              </a>
+            </div>
+          </div>
+          <form class="contacts-form-block__form">
+            <div class="contacts-form-block__form-title">
+              Остались вопросы?<br />
+              Заполните форму — мы свяжемся с вами.
+            </div>
+            <input
+              type="text"
+              placeholder="Ваш номер"
+              name="phone"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Ваш email"
+              name="email"
+              required
+            />
+            <textarea
+              placeholder="Комментарий"
+              name="comment"
+            ></textarea>
+            <button
+              type="submit"
+              class="contacts-form-block__submit-btn"
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="contacts-map">
+        <iframe
+          id="mapFrame"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa485829e6a9e9c816037342936ffe8ee9d0fb17e9c69970a92bdec3b60e9a903&amp;amp;source=constructor"
+          width="100%"
+          height="100%"
+          frameborder="0"
+        ></iframe>
+      </section>
     </main>
-
     <div class="modal-select-region hidden">
       <div class="modal-select-region__inner">
         <ul class="modal-select-region__list">

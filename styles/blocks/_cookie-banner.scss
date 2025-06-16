@@ -22,7 +22,7 @@
   max-width: 900px;
 }
 .cookie-banner__btn {
-  background: linear-gradient(90deg, #bfaaf8 0%, #6c63ff 100%);
+  background: #7b4cfa;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -35,13 +35,9 @@
   text-decoration: underline;
 }
 @media (max-width: 600px) {
-  .cookie-banner {
-    flex-direction: column;
-    font-size: 12px;
+  .cookie-banner__inner {
+
     padding: 12px;
   }
-  .cookie-banner__btn {
-    margin-top: 8px;
-    width: 100%;
-  }
+
 }
