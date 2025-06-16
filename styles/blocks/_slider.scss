@@ -6,6 +6,12 @@
         display: flex;
         gap: rem(15);
         align-items: center;
+        @include mobile{
+            gap: rem(5);
+        }
+    }
+    &__controls {
+        white-space: nowrap;
     }
     &__button {
         &--prev {

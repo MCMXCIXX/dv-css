@@ -1,0 +1,115 @@
+@use "../helpers" as *;
+
+.qa {
+
+
+  &__main-block {
+    display: grid;
+    grid-template-columns: 32% 62%;
+    gap: rem(69);
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: rem(23);
+      padding: 0 rem(16);
+    }
+  }
+  & label {
+    color: rgba(0, 0, 0, 0.2);
+  }
+  &__form-block label input {
+    color: #000;
+  }
+  & .slider__top {
+    display: none;
+    @include tablet {
+        display: flex;
+    }
+  }
+  & .slider__list {
+    flex-direction: column;
+    @include tablet {
+        flex-direction: row;
+    }
+  }
+
+  &__form-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #000;
+    margin-top: 0;
+  }
+  & .contacts__checkbox {
+    @include mobile {
+        margin-top: 0;
+    }
+    color: rgba(0, 0, 0, 0.6);
+  }
+  & .contacts__checkbox a {
+    text-decoration: underline;
+  }
+  & .contacts__submit {
+    width: 100%;
+  }
+  &__tabs {
+    margin-bottom: rem(50);
+  }
+  &__tab {
+    padding: rem(9) rem(20);
+    border-radius: rem(100);
+    &.active {
+      background: #f7f7f7;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+    max-width: rem(756);
+    &-replay {
+      padding-left: rem(64);
+      @include mobile {
+        padding-left: 0;
+      }
+    }
+    @include tablet {
+        min-width: 100%;
+    }
+  }
+  &__item-body {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+  }
+  &__replay {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1rem;
+  }
+  &__controls-warpper {
+    display: flex;
+    align-items: center;
+  }
+  &__user-info {
+    display: flex;
+    gap: rem(12);
+  }
+  &__avatar {
+    width: 59px;
+    height: 59px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &__avatar-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  &__user-name {
+    margin-top: 0;
+    margin-bottom: rem(5);
+    font-weight: 400;
+    font-size: 18px;
+  }
+}

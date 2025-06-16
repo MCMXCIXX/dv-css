@@ -1,6 +1,20 @@
 @use "../helpers" as *;
 
 .reviews {
+  background: #fff;
+  @include mobile {
+    border-radius: rem(20) rem(20) 0 0;
+  }
+  &__slider {
+    @include tablet {
+      max-width: rem(940);
+    }
+    @include mobile {
+      max-width: rem(311);
+      padding: 0 rem(16);
+      margin: 0 auto;
+    }
+  }
   &__card {
     display: flex;
     gap: rem(16);
@@ -8,9 +22,13 @@
     padding: 20px;
     width: 460px;
     background: #fafafa;
+    @include mobile {
+      width: rem(291);
+    }
   }
   &__button {
     color: rgba(123, 76, 250, 0.6);
+    white-space: nowrap;
   }
   &__content {
     display: flex;
