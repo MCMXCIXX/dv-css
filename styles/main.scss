@@ -1,7 +1,5 @@
 @use "helpers" as *;
 
-
-
 @use "fonts";
 @use "variables";
 @use "utils";
@@ -28,9 +26,19 @@
 @use "blocks/prices";
 @use "blocks/reviews";
 @use "blocks/qa";
+@use "blocks/person-modal";
+@use "blocks/cookie-banner";
+@use "blocks/not-found";
 
 .person-main {
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 14.4%, #fff 25.4%);
   padding-bottom: rem(100);
   margin-bottom: rem(-100);
+}
+
+.policy-main {
+  border-radius: 50px 50px 0 0;
+  padding-bottom: rem(100);
+  margin-bottom: rem(-100);
+  background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
 }

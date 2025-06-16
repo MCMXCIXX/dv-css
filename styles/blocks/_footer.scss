@@ -67,4 +67,14 @@
       justify-content: center;
     }
   }
+  &__buttons-wrapper {
+    display: flex;
+    gap: rem(11);
+    @include tablet {
+      width: 100%;
+    }
+    & a {
+      width: rem(50);
+    }
+  }
 }

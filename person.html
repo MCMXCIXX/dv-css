@@ -16,7 +16,10 @@
   <body>
     <main class="person-main">
       <div class="header-wrapper header-wrapper--person">
-        <header class="header header--transparent">
+        <header
+          class="header header--transparent"
+          id="top"
+        >
           <div class="container header__container">
             <a
               href="/"
@@ -167,8 +170,8 @@
             </div>
           </div>
         </header>
-        <div class="breadcrumbs-center">
-          <h2 class="breadcrumbs-center__title">Страница сотудника</h2>
+        <div class="breadcrumbs-center ">
+          <h2 class="breadcrumbs-center__title">Страница сотрудника</h2>
           <div class="breadcrumbs">
             <span><a href="/">Главная</a></span
             ><svg
@@ -666,7 +669,7 @@
                       <div class="qa__text">Как улучшить производительность JavaScript на сайте?</div>
                       <div class="qa__controls-warpper">
                         <button class="qa__reply">Ответить</button>
-                        <span class="qa__more">•••</span>
+                        <button class="qa__more">•••</button>
                       </div>
                     </div>
                     <div class="qa__item-body qa__item-replay">
@@ -727,7 +730,7 @@
                       <div class="qa__text">Почему изображения на сайте долго загружаются?</div>
                       <div class="qa__controls-warpper">
                         <button class="qa__reply">Ответить</button>
-                        <span class="qa__more">•••</span>
+                        <button class="qa__more">•••</button>
                       </div>
                     </div>
                     <div class="qa__item-body qa__item-replay">
@@ -828,7 +831,7 @@
                       <div class="qa__text">Как настроить кэширование для ускорения сайта?</div>
                       <div class="qa__controls-warpper">
                         <button class="qa__reply">Ответить</button>
-                        <span class="qa__more">•••</span>
+                        <button class="qa__more">•••</button>
                       </div>
                     </div>
                     <div class="qa__item-body qa__item-replay">
@@ -889,7 +892,7 @@
                       <div class="qa__text">Почему мой сайт плохо отображается на мобильных устройствах?</div>
                       <div class="qa__controls-warpper">
                         <button class="qa__reply">Ответить</button>
-                        <span class="qa__more">•••</span>
+                        <button class="qa__more">•••</button>
                       </div>
                     </div>
                     <div class="qa__item-body qa__item-replay">
@@ -990,7 +993,7 @@
                       <div class="qa__text">Как уменьшить время ответа сервера?</div>
                       <div class="qa__controls-warpper">
                         <button class="qa__reply">Ответить</button>
-                        <span class="qa__more">•••</span>
+                        <button class="qa__more">•••</button>
                       </div>
                     </div>
                     <div class="qa__item-body qa__item-replay">
@@ -1051,7 +1054,7 @@
                       <div class="qa__text">Как правильно настроить SEO для быстрой индексации?</div>
                       <div class="qa__controls-warpper">
                         <button class="qa__reply">Ответить</button>
-                        <span class="qa__more">•••</span>
+                        <button class="qa__more">•••</button>
                       </div>
                     </div>
                     <div class="qa__item-body qa__item-replay">
@@ -1152,7 +1155,7 @@
                       <div class="qa__text">Как использовать CDN для ускорения загрузки сайта?</div>
                       <div class="qa__controls-warpper">
                         <button class="qa__reply">Ответить</button>
-                        <span class="qa__more">•••</span>
+                        <button class="qa__more">•••</button>
                       </div>
                     </div>
                     <div class="qa__item-body qa__item-replay">
@@ -1213,7 +1216,7 @@
                       <div class="qa__text">Почему CSS-анимации тормозят сайт?</div>
                       <div class="qa__controls-warpper">
                         <button class="qa__reply">Ответить</button>
-                        <span class="qa__more">•••</span>
+                        <button class="qa__more">•••</button>
                       </div>
                     </div>
                     <div class="qa__item-body qa__item-replay">
@@ -1264,6 +1267,27 @@
       </section>
     </main>
     <footer class="footer">
+      <div
+        class="cookie-banner"
+        id="cookie-banner"
+      >
+        <div class="cookie-banner__inner">
+          <span>
+            Сайт использует данные cookie для сервиса веб-аналитики Яндекс.Метрика. Продолжая использовать данный сайт, вы соглашаетесь с
+            <a
+              href="/policy"
+              target="_blank"
+              >Политикой в отношении обработки персональных данных</a
+            >.
+          </span>
+          <button
+            class="cookie-banner__btn"
+            id="cookie-accept"
+          >
+            Принимаю
+          </button>
+        </div>
+      </div>
       <div class="container footer__container">
         <div class="breadcrumbs footer__breadcrumbs">
           <span><a href="/">Главная</a></span
@@ -1544,6 +1568,26 @@
               >+7 931 204-04-44</a
             >
           </div>
+          <div class="footer__buttons-wrapper">
+            <a href="tel:+79312040444"
+              ><img
+                width="100%"
+                src="./icons/call-tel.png"
+                alt=""
+            /></a>
+            <a href="https://wa.me/79312040444"
+              ><img
+                width="100%"
+                src="./icons/call-mess.png"
+                alt=""
+            /></a>
+            <a href="#top"
+              ><img
+                width="100%"
+                src="./icons/top.png"
+                alt=""
+            /></a>
+          </div>
         </div>
       </div>
     </footer>
@@ -1555,10 +1599,324 @@
         </ul>
       </div>
     </div>
+
+    <div
+      class="person-modal"
+      id="order-modal"
+    >
+      <div class="person-modal__inner">
+        <div class="person-modal__form">
+          <h2 class="person-modal__title">Оставить заявку специалисту</h2>
+          <form
+            action="#"
+            class="contacts__form"
+          >
+            <h2 class="contacts__form-label">Оставьте заявку — специалист свяжется с вами и поможет решить вашу задачу.</h2>
+            <label for="FIO2">
+              <input
+                class="input"
+                id="FIO2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">ФИО<span>*</span></span>
+            </label>
+            <label for="tel2">
+              <input
+                class="input"
+                id="tel2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">+7 (000) 000-00-00<span>*</span></span>
+            </label>
+            <label for="question">
+              <input
+                class="input"
+                id="question"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">Ваш вопрос<span>*</span></span>
+            </label>
+            <button
+              type="submit"
+              class="main-form__submit contacts__submit"
+            >
+              Отправить заявку
+            </button>
+            <label class="main-form__checkbox contacts__checkbox">
+              <input
+                type="checkbox"
+                required
+              />
+              <span class="custom-checkbox">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__unchecked"
+                >
+                  <path
+                    d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                    stroke="#7b4cfa"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__checked"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.886719"
+                    width="20"
+                    height="20"
+                    rx="3"
+                    fill="#7b4cfa"
+                  />
+                  <path
+                    d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              Соглашаюсь с <a href="">правилами пользования</a>
+            </label>
+          </form>
+        </div>
+        <div class="person-modal__image person-modal__image--order"></div>
+        <div class="person-modal__close"></div>
+      </div>
+    </div>
+    <div
+      class="person-modal"
+      id="question-modal"
+    >
+      <div class="person-modal__inner">
+        <div class="person-modal__form">
+          <h2 class="person-modal__title">Задать вопрос специалисту</h2>
+          <form
+            action="#"
+            class="contacts__form"
+          >
+            <h2 class="contacts__form-label">Оставьте заявку — специалист свяжется с вами и поможет решить вашу задачу.</h2>
+            <label for="FIO2">
+              <input
+                class="input"
+                id="FIO2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">ФИО<span>*</span></span>
+            </label>
+            <label for="tel2">
+              <input
+                class="input"
+                id="tel2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">+7 (000) 000-00-00<span>*</span></span>
+            </label>
+            <label for="question">
+              <input
+                class="input"
+                id="question"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">Ваш вопрос<span>*</span></span>
+            </label>
+            <button
+              type="submit"
+              class="main-form__submit contacts__submit"
+            >
+              Отправить заявку
+            </button>
+            <label class="main-form__checkbox contacts__checkbox">
+              <input
+                type="checkbox"
+                required
+              />
+              <span class="custom-checkbox">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__unchecked"
+                >
+                  <path
+                    d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                    stroke="#7b4cfa"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__checked"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.886719"
+                    width="20"
+                    height="20"
+                    rx="3"
+                    fill="#7b4cfa"
+                  />
+                  <path
+                    d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              Соглашаюсь с <a href="">правилами пользования</a>
+            </label>
+          </form>
+        </div>
+        <div class="person-modal__image person-modal__image--question"></div>
+        <div class="person-modal__close"></div>
+      </div>
+    </div>
+    <div
+      class="person-modal"
+      id="review-modal"
+    >
+      <div class="person-modal__inner">
+        <div class="person-modal__form">
+          <h2 class="person-modal__title">Насколько вы довольны сотрудничеством?</h2>
+          <form
+            action="#"
+            class="contacts__form"
+          >
+            <h2 class="contacts__form-label">Ваш отзыв поможет нам поддерживать качество услуг и улучшать сервис.</h2>
+            <label for="FIO2">
+              <input
+                class="input"
+                id="FIO2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">ФИО<span>*</span></span>
+            </label>
+            <label for="tel2">
+              <input
+                class="input"
+                id="tel2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">+7 (000) 000-00-00<span>*</span></span>
+            </label>
+            <label for="question">
+              <input
+                class="input"
+                id="question"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">Ваш честный отзыв<span>*</span></span>
+            </label>
+            <button
+              type="submit"
+              class="main-form__submit contacts__submit"
+            >
+              Оставить отзыв
+            </button>
+            <label class="main-form__checkbox contacts__checkbox">
+              <input
+                type="checkbox"
+                required
+              />
+              <span class="custom-checkbox">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__unchecked"
+                >
+                  <path
+                    d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                    stroke="#7b4cfa"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__checked"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.886719"
+                    width="20"
+                    height="20"
+                    rx="3"
+                    fill="#7b4cfa"
+                  />
+                  <path
+                    d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              Соглашаюсь с <a href="">правилами пользования</a>
+            </label>
+          </form>
+        </div>
+        <div class="person-modal__image person-modal__image--review"></div>
+        <div class="person-modal__close"></div>
+      </div>
+    </div>
+
     <script
       src="./js/main.js"
       type="module"
     ></script>
-    <script src="./js/QaTabs.js" type="module"></script>
+    <script
+      src="./js/QaTabs.js"
+      type="module"
+    ></script>
   </body>
 </html>

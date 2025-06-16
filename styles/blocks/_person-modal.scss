@@ -1,0 +1,85 @@
+@use "../helpers" as *;
+.person-modal {
+  display: none;
+  color: #323232;
+  position: fixed;
+  inset: 0;
+  z-index: 1111;
+  background: linear-gradient(136deg, #fff 0%, #53dba7 71.15%, #0fcc84 100%);
+  &.active {
+    display: block;
+  }
+  &__inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 0 rem(69);
+    align-items: center;
+    height: 100%;
+    @include tablet {
+      padding: 0 rem(16);
+      display: flex;
+    }
+  }
+  &__close img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  &__close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: rem(37);
+    right: rem(44);
+    z-index: 1;
+    cursor: pointer;
+    background-image: url(../icons/close-modal.svg);
+    background-size: 100%;
+    @include tablet {
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    @include fluid-text(64, 35);
+    line-height: 100%;
+  }
+  &__image {
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include tablet {
+      display: none;
+    }
+  }
+  & .contacts__submit {
+    width: 100%;
+    border-radius: 10px;
+  }
+  &__image--order {
+    background-image: url(../images/person-modal/spec.svg);
+  }
+  &__image--question {
+    background-image: url(../images/person-modal/ques.png);
+  }
+  &__image--review {
+    background-image: url(../images/person-modal/review.png);
+    background-size: 80%;
+    background-position: center right;
+  }
+  & label {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  & label input {
+    color: #000;
+  }
+  & .contacts__checkbox a {
+    text-decoration: underline;
+  }
+}

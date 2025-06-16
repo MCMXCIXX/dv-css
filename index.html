@@ -14,7 +14,10 @@
   </head>
 
   <body>
-    <header class="header">
+    <header
+      class="header"
+      id="top"
+    >
       <div class="container header__container">
         <a
           href="/"
@@ -1749,6 +1752,27 @@
     </main>
 
     <footer class="footer">
+      <div
+        class="cookie-banner"
+        id="cookie-banner"
+      >
+        <div class="cookie-banner__inner">
+          <span>
+            Сайт использует данные cookie для сервиса веб-аналитики Яндекс.Метрика. Продолжая использовать данный сайт, вы соглашаетесь с
+            <a
+              href="/policy"
+              target="_blank"
+              >Политикой в отношении обработки персональных данных</a
+            >.
+          </span>
+          <button
+            class="cookie-banner__btn"
+            id="cookie-accept"
+          >
+            Принимаю
+          </button>
+        </div>
+      </div>
       <div class="container footer__container">
         <div class="breadcrumbs footer__breadcrumbs">
           <span><a href="/">Главная</a></span
@@ -2029,6 +2053,26 @@
               >+7 931 204-04-44</a
             >
           </div>
+          <div class="footer__buttons-wrapper">
+            <a href="tel:+79312040444"
+              ><img
+                width="100%"
+                src="./icons/call-tel.png"
+                alt=""
+            /></a>
+            <a href="https://wa.me/79312040444"
+              ><img
+                width="100%"
+                src="./icons/call-mess.png"
+                alt=""
+            /></a>
+            <a href="#top"
+              ><img
+                width="100%"
+                src="./icons/top.png"
+                alt=""
+            /></a>
+          </div>
         </div>
       </div>
     </footer>
@@ -2040,6 +2084,7 @@
         </ul>
       </div>
     </div>
+
     <script
       src="./js/main.js"
       type="module"

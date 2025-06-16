@@ -17,6 +17,10 @@
         background-position: top;
       }
     }
+    &--policy {
+      padding-bottom: 100px;
+      margin-bottom: -100px;
+    }
   }
   @include tablet {
     padding-top: rem(12);
