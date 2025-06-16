@@ -1,8 +1,6 @@
 @use "../helpers" as *;
 
 .qa {
-
-
   &__main-block {
     display: grid;
     grid-template-columns: 32% 62%;
@@ -20,16 +18,26 @@
   &__form-block label input {
     color: #000;
   }
+  &__slider {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    &.active {
+      z-index: 1;
+      opacity: 1;
+      position: relative;
+    }
+  }
   & .slider__top {
     display: none;
     @include tablet {
-        display: flex;
+      display: flex;
     }
   }
   & .slider__list {
     flex-direction: column;
     @include tablet {
-        flex-direction: row;
+      flex-direction: row;
     }
   }
 
@@ -42,7 +50,7 @@
   }
   & .contacts__checkbox {
     @include mobile {
-        margin-top: 0;
+      margin-top: 0;
     }
     color: rgba(0, 0, 0, 0.6);
   }
@@ -54,12 +62,21 @@
   }
   &__tabs {
     margin-bottom: rem(50);
+    @include tablet {
+      margin-bottom: rem(20);
+    }
   }
   &__tab {
     padding: rem(9) rem(20);
     border-radius: rem(100);
+    color: #8c8c8c;
+    @include fluid-text(16, 11);
+    @include mobile {
+      padding: rem(5) rem(4);
+    }
     &.active {
       background: #f7f7f7;
+      color: #000;
     }
   }
   &__item {
@@ -74,7 +91,7 @@
       }
     }
     @include tablet {
-        min-width: 100%;
+      min-width: 100%;
     }
   }
   &__item-body {

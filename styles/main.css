@@ -1314,6 +1314,16 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
 .qa__form-block label input {
   color: #000;
 }
+.qa__slider {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.qa__slider.active {
+  z-index: 1;
+  opacity: 1;
+  position: relative;
+}
 .qa .slider__top {
   display: none;
 }
@@ -1354,12 +1364,25 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
 .qa__tabs {
   margin-bottom: 3.125rem;
 }
+@media (max-width: 1023.98px) {
+  .qa__tabs {
+    margin-bottom: 1.25rem;
+  }
+}
 .qa__tab {
   padding: 0.5625rem 1.25rem;
   border-radius: 6.25rem;
+  color: #8c8c8c;
+  font-size: clamp(0.6875rem, 0.5982142857rem + 0.4464285714vw, 1rem);
+}
+@media (max-width: 767.98px) {
+  .qa__tab {
+    padding: 0.3125rem 0.25rem;
+  }
 }
 .qa__tab.active {
   background: #f7f7f7;
+  color: #000;
 }
 .qa__item {
   display: flex;

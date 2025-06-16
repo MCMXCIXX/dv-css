@@ -6,9 +6,10 @@ export default class Slider {
 
   initSliders() {
     this.sliders.forEach((slider, index) => {
-      const sliderList = slider.querySelector(".slider__list"); 
+      const tabs = document.querySelectorAll(".qa__tab");
+      const sliderList = slider.querySelector(".slider__list");
       const slides = sliderList.children;
-      if (!slides.length) return; 
+      if (!slides.length) return;
 
       const prevButton = slider.querySelector(".slider__button--prev");
       const nextButton = slider.querySelector(".slider__button--next");
@@ -17,20 +18,19 @@ export default class Slider {
       const totalSlides = slides.length;
       const visibleWidth = slider.offsetWidth;
 
-
       const updateSlideWidth = () => {
         slideWidth = slides[0].offsetWidth + 20;
       };
 
-
       const moveSlider = () => {
         sliderList.style.transform = `translateX(${position}px)`;
       };
-
-
       const handleNext = () => {
         const maxPosition = -(totalSlides - Math.floor(visibleWidth / slideWidth)) * slideWidth;
+
         if (position > maxPosition) {
+          updateSlideWidth();
+
           position -= slideWidth;
           moveSlider();
         }
@@ -48,10 +48,12 @@ export default class Slider {
 
       const handlePrev = () => {
         if (position < 0) {
+          updateSlideWidth();
           position += slideWidth;
           moveSlider();
+          console.log(position);
         }
-        if (position !== 0) {
+        if (position != 0) {
           prevButton.style.opacity = "1";
           nextButton.style.opacity = "1";
         } else {
