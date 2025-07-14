@@ -5,6 +5,9 @@
   @include tablet {
     padding: rem(60) 0 rem(10) 0;
   }
+  &--blog{
+    background: transparent;
+  }
 
   &__title {
     font-weight: 700;

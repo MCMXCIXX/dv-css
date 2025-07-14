@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Страница сотудника</title>
+    <link
+      rel="stylesheet"
+      href="./styles/main.css"
+    />
+  </head>
+
+  <body>
+    <main class="blog-main">
+      <div class="header-wrapper header-wrapper--blog">
+        <header
+          class="header header--transparent"
+          id="top"
+        >
+          <div class="container header__container">
+            <a
+              href="/"
+              class="logo"
+            >
+              <img
+                src="./images/logo/logo.png"
+                class="logo__image"
+                alt="логотип"
+              />
+            </a>
+            <div class="header__menu-wrapper">
+              <nav class="header__nav">
+                <button class="header__category category">
+                  <img
+                    class="category__image"
+                    src="./icons/category.svg"
+                    alt=""
+                  />
+                </button>
+                <ul class="header__list">
+                  <li><a href="#">Почему мы</a></li>
+                  <li><a href="#">Команда</a></li>
+                  <li><a href="#">Услуги</a></li>
+                  <li><a href="#">Цены</a></li>
+                  <li><a href="#">Контакты</a></li>
+                  <li><a href="#">Блог</a></li>
+                </ul>
+              </nav>
+              <div class="header__contacts">
+                <div class="header__socials">
+                  <a
+                    href="https://t.me/brash_aleks"
+                    target="_blank"
+                    ><img
+                      src="./icons/telegram-icon.svg"
+                      alt=""
+                  /></a>
+                  <a
+                    href="https://wa.me/79312040444"
+                    target="_blank"
+                    ><img
+                      src="./icons/whats-up-icon.svg"
+                      alt=""
+                  /></a>
+                </div>
+                <a
+                  href="tel:+79312040444"
+                  class="header__phone"
+                  >+7 931 204-04-44</a
+                >
+                <button class="header__city modal-open">
+                  <img
+                    src="./icons/location.svg"
+                    alt=""
+                  />г. <span>Санкт-Петербург</span>
+                </button>
+              </div>
+            </div>
+            <div class="header__contacts header__contacts--mobile">
+              <div class="header__socials">
+                <a
+                  href="https://t.me/brash_aleks"
+                  target="_blank"
+                  ><img
+                    src="./icons/telegram-icon.svg"
+                    alt=""
+                /></a>
+                <a
+                  href="https://wa.me/79312040444"
+                  target="_blank"
+                  ><img
+                    src="./icons/whats-up-icon.svg"
+                    alt=""
+                /></a>
+              </div>
+              <a
+                href="tel:+79312040444"
+                class="header__phone"
+                >+7 931 204-04-44</a
+              >
+              <button class="header__city modal-open">
+                <img
+                  src="./icons/location.svg"
+                  alt=""
+                />г. <span>Санкт-Петербург</span>
+              </button>
+            </div>
+            <div class="burger header__burger">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="burger__burger-icon"
+              >
+                <rect
+                  x="4"
+                  y="6"
+                  width="16"
+                  height="2"
+                  rx="1"
+                  fill="#fff"
+                />
+                <rect
+                  x="4"
+                  y="11"
+                  width="16"
+                  height="2"
+                  rx="1"
+                  fill="#fff"
+                />
+                <rect
+                  x="4"
+                  y="16"
+                  width="16"
+                  height="2"
+                  rx="1"
+                  fill="#fff"
+                />
+              </svg>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                class="burger__close-icon hidden"
+              >
+                <rect
+                  x="11"
+                  y="4"
+                  width="2"
+                  height="16"
+                  rx="1"
+                  fill="#fff"
+                  transform="rotate(45 12 12)"
+                />
+                <rect
+                  x="11"
+                  y="4"
+                  width="2"
+                  height="16"
+                  rx="1"
+                  fill="#fff"
+                  transform="rotate(-45 12 12)"
+                />
+              </svg>
+            </div>
+          </div>
+        </header>
+        <section class="promo promo--blog">
+          <div class="container promo__container">
+            <h1 class="promo__title">Блог</h1>
+            <p class="promo__subtitle">
+              Наш блог — это место, где серьёзные вещи про сайты объясняются <span class="green-text">без занудства.</span> Почему тормозит лендинг, как не нарваться на штраф за
+              персональные данные, чем живёт Битрикс — разбираемся, шутим, иногда жалуемся, но всегда по делу.
+            </p>
+            <p class="promo__subtitle">
+              Если в голове назрел вопрос, в проекте что-то «пошло не так» или просто хочется поговорить о вашем сайте — <span class="green-text">не стесняйтесь, пишите.</span>
+            </p>
+            <form class="main-form promo__main-form">
+              <div class="main-form__inner">
+                <label for="site">
+                  <input
+                    class="input"
+                    id="site"
+                    type="text"
+                    name="site"
+                    placeholder=""
+                    required
+                  />
+                  <span class="main-form__placeholder">Адрес сайта<span>*</span></span>
+                </label>
+                <label for="name">
+                  <input
+                    class="input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder=""
+                    required
+                  />
+                  <span class="main-form__placeholder">Имя<span>*</span></span>
+                </label>
+                <label for="phone">
+                  <input
+                    class="input"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    placeholder=""
+                    required
+                  />
+                  <span class="main-form__placeholder">Телефон<span>*</span></span>
+                </label>
+                <button
+                  type="submit"
+                  class="main-form__submit"
+                >
+                  Отправить
+                </button>
+              </div>
+              <label class="main-form__checkbox">
+                <input
+                  type="checkbox"
+                  required
+                />
+                <span class="custom-checkbox">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="custom-checkbox__unchecked"
+                  >
+                    <path
+                      d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                      stroke="#93DCC4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="custom-checkbox__checked"
+                  >
+                    <rect
+                      x="0.5"
+                      y="0.886719"
+                      width="20"
+                      height="20"
+                      rx="3"
+                      fill="#93DCC4"
+                    />
+                    <path
+                      d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                Я даю согласие на обработку моих персональных данных в соответствии с политикой конфиденциальности
+              </label>
+            </form>
+            <div class="breadcrumbs">
+              <span><a href="/">Главная</a></span
+              ><svg
+                width="7"
+                height="6"
+                viewBox="0 0 7 6"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.0985 3L0.902344 6L0.902344 4.76837e-07L6.0985 3Z"
+                  fill="#BFAAF8"
+                />
+              </svg>
+              <span><a href="">Блог</a></span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="blog-tags blog-tags--padding container">
+        <ul class="blog-tags__list">
+          <li class="blog-tags__item active">Все статьи</li>
+          <li class="blog-tags__item">#Что нового в вебе?</li>
+          <li class="blog-tags__item">#Лайфхаки</li>
+          <li class="blog-tags__item">#Продвижение и реклама</li>
+          <li class="blog-tags__item">#Мы в деле</li>
+          <li class="blog-tags__item">#Закон на сайте</li>
+        </ul>
+      </section>
+      <section class="blog container">
+        <ul class="blog__list">
+          <li class="blog-card">
+            <a
+              href="#"
+              class="blog-card__link-wrapper"
+            >
+              <div class="blog-card__image-wrapper">
+                <img class="blog-card__image" src="./images/blog/1.jpg" alt="">
+                <div class="blog-card__tag">#Закон на сайте</div>
+                <div class="blog-card__hover"><span class="blog-card__hover-text">Читать подробнее</span></div>
+              </div>
+              <div class="blog-card__meta">
+                <div class="blog-card__meta-date">20 мая 2025</div>
+                <div class="blog-card__meta-time">
+                  10 мин
+                  <svg
+                    width="28"
+                    height="32"
+                    viewBox="0 0 28 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.8768 10.4137L25.3547 9.93587C25.8051 9.4855 25.8051 8.75269 25.3547 8.30231L23.8071 6.75469C23.3567 6.30431 22.6239 6.30431 22.1735 6.75469L21.6956 7.23256C20.1026 6.10219 18.2515 5.31325 16.2497 4.97156V3.62625H17.5263C18.1632 3.62625 18.6814 3.10806 18.6814 2.47119V1.71763C18.6814 1.08069 18.1632 0.5625 17.5263 0.5625H10.4741C9.83719 0.5625 9.31906 1.08069 9.31906 1.71763V2.47112C9.31906 3.10806 9.83725 3.62619 10.4741 3.62619H11.7508V4.97156C9.74906 5.31325 7.89794 6.10219 6.30487 7.23256L5.827 6.75469C5.37662 6.30431 4.64381 6.30431 4.19344 6.75469L2.64581 8.30237C2.428 8.52019 2.30806 8.81025 2.30806 9.11913C2.30806 9.428 2.428 9.71806 2.64581 9.93587L3.12369 10.4138C1.58019 12.589 0.671875 15.2449 0.671875 18.1092C0.671875 25.4584 6.651 31.4375 14.0002 31.4375C21.3495 31.4375 27.3286 25.4584 27.3286 18.1091C27.3286 15.2449 26.4203 12.5889 24.8768 10.4137ZM22.7922 7.37344C22.9014 7.26425 23.0791 7.26425 23.1883 7.37344L24.7359 8.92106C24.7884 8.97363 24.8174 9.04394 24.8174 9.11913C24.8174 9.19431 24.7884 9.26462 24.7359 9.31719L24.3419 9.71125C23.7622 8.99875 23.1106 8.34719 22.3981 7.7675L22.7922 7.37344ZM10.1941 2.47112V1.71763C10.1941 1.56319 10.3197 1.4375 10.4741 1.4375H17.5263C17.6807 1.4375 17.8064 1.56319 17.8064 1.71763V2.47112C17.8064 2.62556 17.6807 2.75119 17.5263 2.75119H10.4741C10.3197 2.75125 10.1941 2.62556 10.1941 2.47112ZM12.6258 3.62625H15.3747V4.85125C14.9227 4.80475 14.4642 4.78075 14.0002 4.78075C13.5363 4.78075 13.0778 4.80475 12.6258 4.85125V3.62625ZM3.2645 9.31713C3.21194 9.26463 3.183 9.19431 3.183 9.11913C3.183 9.04394 3.21194 8.97363 3.2645 8.92106L4.81213 7.37344C4.92138 7.26412 5.09906 7.26425 5.20825 7.37344L5.60231 7.7675C4.88981 8.34719 4.23825 8.99875 3.65856 9.71125L3.2645 9.31713ZM14.0002 30.5625C7.13344 30.5625 1.54688 24.9759 1.54688 18.1091C1.54688 11.2423 7.13344 5.65575 14.0002 5.65575C20.8671 5.65575 26.4536 11.2423 26.4536 18.1091C26.4536 24.9759 20.8671 30.5625 14.0002 30.5625ZM14.0002 7.62519C8.21931 7.62519 3.51625 12.3283 3.51625 18.1092C3.51625 23.8901 8.21937 28.5932 14.0002 28.5932C19.7811 28.5932 24.4842 23.8901 24.4842 18.1092C24.4842 12.3283 19.7811 7.62519 14.0002 7.62519ZM14.0002 27.7182C8.70181 27.7182 4.39125 23.4076 4.39125 18.1092C4.39125 12.8108 8.70181 8.50019 14.0002 8.50019C19.2986 8.50019 23.6092 12.8108 23.6092 18.1092C23.6092 23.4076 19.2986 27.7182 14.0002 27.7182ZM18.6712 10.8938L17.9511 12.1411C17.8701 12.2814 17.723 12.3599 17.5718 12.3599C17.4976 12.3599 17.4224 12.341 17.3534 12.3012C17.1442 12.1804 17.0725 11.9128 17.1933 11.7036L17.9134 10.4563C18.0343 10.247 18.3018 10.1753 18.5111 10.2961C18.7203 10.4169 18.792 10.6845 18.6712 10.8938ZM19.8082 14.7559C19.6874 14.5467 19.7591 14.2791 19.9683 14.1583L21.2156 13.4382C21.4249 13.3174 21.6924 13.3891 21.8132 13.5983C21.9341 13.8076 21.8624 14.0751 21.6531 14.1959L20.4058 14.9161C20.3369 14.9559 20.2617 14.9747 20.1874 14.9747C20.0362 14.9747 19.8892 14.8962 19.8082 14.7559ZM23.0219 18.1091C23.0219 18.3507 22.8261 18.5466 22.5844 18.5466H21.1442C20.9026 18.5466 20.7067 18.3507 20.7067 18.1091C20.7067 17.8675 20.9026 17.6716 21.1442 17.6716H22.5844C22.8261 17.6716 23.0219 17.8675 23.0219 18.1091ZM21.8132 22.62C21.7323 22.7604 21.5852 22.8388 21.434 22.8388C21.3598 22.8388 21.2846 22.8199 21.2156 22.7801L19.9683 22.06C19.7591 21.9392 19.6874 21.6716 19.8082 21.4624C19.929 21.2531 20.1966 21.1814 20.4058 21.3022L21.6531 22.0224C21.8624 22.1432 21.9341 22.4108 21.8132 22.62ZM18.6712 25.3245C18.792 25.5337 18.7203 25.8013 18.5111 25.9221C18.4422 25.9619 18.3669 25.9808 18.2927 25.9808C18.1415 25.9808 17.9944 25.9024 17.9134 25.762L17.1933 24.5147C17.0725 24.3054 17.1442 24.0379 17.3534 23.9171C17.5627 23.7962 17.8302 23.8679 17.9511 24.0772L18.6712 25.3245ZM14.4377 25.2531V26.6934C14.4377 26.935 14.2419 27.1309 14.0002 27.1309C13.7586 27.1309 13.5627 26.935 13.5627 26.6934V25.2531C13.5627 25.0114 13.7586 24.8156 14.0002 24.8156C14.2419 24.8156 14.4377 25.0114 14.4377 25.2531ZM10.8072 24.5147L10.0871 25.762C10.0061 25.9024 9.859 25.9808 9.70781 25.9808C9.63356 25.9808 9.55837 25.9619 9.48944 25.9221C9.28019 25.8013 9.2085 25.5337 9.32931 25.3245L10.0494 24.0772C10.1702 23.8679 10.4378 23.7962 10.6471 23.9171C10.8563 24.0379 10.928 24.3054 10.8072 24.5147ZM8.19231 21.4624C8.31312 21.6716 8.24144 21.9392 8.03219 22.06L6.78481 22.7801C6.71587 22.8199 6.64069 22.8388 6.56644 22.8388C6.41525 22.8388 6.26819 22.7604 6.18719 22.62C6.06637 22.4108 6.13806 22.1432 6.34731 22.0224L7.59469 21.3022C7.80394 21.1814 8.0715 21.2531 8.19231 21.4624ZM6.85631 18.5466H5.41606C5.17444 18.5466 4.97856 18.3507 4.97856 18.1091C4.97856 17.8675 5.17444 17.6716 5.41606 17.6716H6.85631C7.09794 17.6716 7.29381 17.8675 7.29381 18.1091C7.29381 18.3507 7.09794 18.5466 6.85631 18.5466ZM8.19231 14.7559C8.11131 14.8963 7.96425 14.9747 7.81306 14.9747C7.73881 14.9747 7.66362 14.9559 7.59469 14.9161L6.34731 14.1959C6.13806 14.0751 6.06637 13.8076 6.18719 13.5983C6.308 13.3891 6.57556 13.3173 6.78481 13.4382L8.03219 14.1583C8.24144 14.2791 8.31312 14.5467 8.19231 14.7559ZM10.8072 11.7036C10.928 11.9128 10.8563 12.1804 10.6471 12.3012C10.5782 12.341 10.5029 12.3599 10.4287 12.3599C10.2775 12.3599 10.1304 12.2814 10.0494 12.1411L9.32925 10.8938C9.20844 10.6845 9.28012 10.4169 9.48938 10.2961C9.69856 10.1754 9.96619 10.247 10.087 10.4563L10.8072 11.7036ZM14.4377 16.8034V12.9303C14.4377 12.6887 14.2419 12.4928 14.0002 12.4928C13.7586 12.4928 13.5627 12.6887 13.5627 12.9303V16.8035C13.0171 16.9868 12.6229 17.5027 12.6229 18.1092C12.6229 18.8687 13.2408 19.4866 14.0003 19.4866C14.7598 19.4866 15.3777 18.8687 15.3777 18.1092C15.3776 17.5026 14.9833 16.9867 14.4377 16.8034ZM14.0002 18.6115C13.7232 18.6115 13.4978 18.3862 13.4978 18.1091C13.4978 17.8321 13.7232 17.6068 14.0002 17.6068C14.2773 17.6068 14.5026 17.8321 14.5026 18.1091C14.5026 18.3861 14.2773 18.6115 14.0002 18.6115ZM13.5627 10.9653V9.52494C13.5627 9.28331 13.7586 9.08744 14.0002 9.08744C14.2419 9.08744 14.4377 9.28331 14.4377 9.52494V10.9653C14.4377 11.2069 14.2419 11.4028 14.0002 11.4028C13.7586 11.4028 13.5627 11.2069 13.5627 10.9653Z"
+                      fill="#757575"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="blog-card__title">С 30 мая штрафы за нарушение требований по защите персональных данных (ПДн) выросли в 3 раза — ваш сайт готов?</h2>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div
+        class="cookie-banner"
+        id="cookie-banner"
+      >
+        <div class="cookie-banner__inner">
+          <span>
+            Сайт использует данные cookie для сервиса веб-аналитики Яндекс.Метрика. Продолжая использовать данный сайт, вы соглашаетесь с
+            <a
+              href="/policy"
+              target="_blank"
+              >Политикой в отношении обработки персональных данных</a
+            >.
+          </span>
+          <button
+            class="cookie-banner__btn"
+            id="cookie-accept"
+          >
+            Принимаю
+          </button>
+        </div>
+      </div>
+      <div class="container footer__container">
+        <div class="breadcrumbs footer__breadcrumbs">
+          <span><a href="/">Главная</a></span
+          ><svg
+            width="7"
+            height="6"
+            viewBox="0 0 7 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.0985 3L0.902344 6L0.902344 4.76837e-07L6.0985 3Z"
+              fill="#BFAAF8"
+            />
+          </svg>
+          <span><a href="">Услуги</a></span>
+          <svg
+            width="7"
+            height="6"
+            viewBox="0 0 7 6"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.0985 3L0.902344 6L0.902344 4.76837e-07L6.0985 3Z"
+              fill="#BFAAF8"
+            />
+          </svg>
+          <span><a href="">Доработка сайтов</a></span>
+        </div>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <div class="footer__title">Разработка</div>
+            <ul class="footer__list">
+              <li><a href="#">Веб-сервисы с личным кабинетом</a></li>
+              <li><a href="#">Информационный сайт</a></li>
+              <li><a href="#">Интернет-магазин</a></li>
+              <li><a href="#">Landing Page</a></li>
+              <li><a href="#">API-интеграции</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">Дополнительные услуги</div>
+            <ul class="footer__list">
+              <li><a href="#">Техническая поддержка</a></li>
+              <li><a href="#">Продвижение страницы</a></li>
+              <li><a href="#">Разработка логотипов</a></li>
+              <li><a href="#">Продвижение сайта</a></li>
+              <li><a href="#">Контекстная реклама</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">Информация</div>
+            <ul class="footer__list">
+              <li><a href="#">Инструкция по WordPress</a></li>
+              <li><a href="#">Инструкция по WooCommerce</a></li>
+              <li><a href="#">Инструкция по Яндекс Директ</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__title">О нас</div>
+            <ul class="footer__list">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Кейсы</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Все отзывы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="container">
+        <div class="contacts footer__contacts">
+          <div class="contacts__info">
+            <div class="contacts__region">
+              <div class="contacts__region-label">Ваш регион</div>
+              <div class="contacts__region-select modal-open">
+                <span class="contacts__region-select-text">Санкт-Петербург</span>
+              </div>
+            </div>
+            <ul class="contacts__list">
+              <li class="contacts__adress">
+                <a
+                  href="https://yandex.ru/maps/-/CHSUFRM1"
+                  target="_blank"
+                  >г. Санкт-Петербург, Невский проспект, дом. 153</a
+                >
+              </li>
+              <li class="contacts__email"><a href="mailto:sell@dv-css.ru">sell@dv-css.ru</a></li>
+              <li class="contacts__number"><a href="tel:+79312040444">+7 931 204-04-44</a></li>
+            </ul>
+            <form
+              action="#"
+              class="contacts__form"
+            >
+              <h2 class="contacts__form-label">Заказать</h2>
+              <label for="FIO">
+                <input
+                  class="input"
+                  id="FIO"
+                  type="text"
+                  name="FIO"
+                  placeholder=""
+                  required
+                />
+                <span class="main-form__placeholder">ФИО<span>*</span></span>
+              </label>
+              <label for="tel">
+                <input
+                  class="input"
+                  id="tel"
+                  type="text"
+                  name="FIO"
+                  placeholder=""
+                  required
+                />
+                <span class="main-form__placeholder">+7 (000) 000-00-00<span>*</span></span>
+              </label>
+              <button
+                type="submit"
+                class="main-form__submit contacts__submit"
+              >
+                Проверить мой сайт
+              </button>
+              <label class="main-form__checkbox contacts__checkbox">
+                <input
+                  type="checkbox"
+                  required
+                />
+                <span class="custom-checkbox">
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="custom-checkbox__unchecked"
+                  >
+                    <path
+                      d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                      stroke="#93DCC4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="custom-checkbox__checked"
+                  >
+                    <rect
+                      x="0.5"
+                      y="0.886719"
+                      width="20"
+                      height="20"
+                      rx="3"
+                      fill="#93DCC4"
+                    />
+                    <path
+                      d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                Я даю согласие на обработку моих персональных данных в соответствии с политикой конфиденциальности
+              </label>
+            </form>
+          </div>
+          <div class="contacts__map-block">
+            <div class="contacts__map-tabs">
+              <div
+                class="contacts__map-tab region-select"
+                data-select-region="1"
+              >
+                Дальний Восток
+              </div>
+              <div
+                class="contacts__map-tab region-select active"
+                data-select-region="0"
+              >
+                Санкт-Петербург
+              </div>
+            </div>
+            <div class="contacts__map">
+              <iframe
+                id="mapFrame"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Afd72a5673b9554d5b6ac0d342f40f8a8511c7d3fef872d88f1b5022e164cd0b2&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="footer__city">
+          <h3 class="footer__city-title">Мы работаем в городах</h3>
+          <p class="footer__city-name active">Благовещенск</p>
+          <p class="footer__city-name">Владивосток</p>
+          <p class="footer__city-name">Хабаровск</p>
+          <p class="footer__city-name">Уссурийск,</p>
+          <p class="footer__city-name">Якутск</p>
+          <p class="footer__city-name">Южно-сахалинск</p>
+          <p class="footer__city-name">Чита</p>
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="header footer__header">
+        <div class="container header__container">
+          <a
+            href="/"
+            class="logo"
+          >
+            <img
+              src="./images/logo/logo.png"
+              class="logo__image"
+              alt="логотип"
+            />
+          </a>
+          <div class="header__menu-wrapper">
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li><a href="#">Почему мы</a></li>
+                <li><a href="#">Команда</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Блог</a></li>
+              </ul>
+            </nav>
+            <div class="header__contacts">
+              <div class="header__socials">
+                <a
+                  href="https://t.me/brash_aleks"
+                  target="_blank"
+                  ><img
+                    src="./icons/telegram-icon.svg"
+                    alt=""
+                /></a>
+                <a
+                  href="https://wa.me/79312040444"
+                  target="_blank"
+                  ><img
+                    src="./icons/whats-up-icon.svg"
+                    alt=""
+                /></a>
+              </div>
+              <a
+                href="tel:+79312040444"
+                class="header__phone"
+                >+7 931 204-04-44</a
+              >
+            </div>
+          </div>
+          <div class="header__contacts header__contacts--mobile">
+            <div class="header__socials">
+              <a
+                href="https://t.me/brash_aleks"
+                target="_blank"
+                ><img
+                  src="./icons/telegram-icon.svg"
+                  alt=""
+              /></a>
+              <a
+                href="https://wa.me/79312040444"
+                target="_blank"
+                ><img
+                  src="./icons/whats-up-icon.svg"
+                  alt=""
+              /></a>
+            </div>
+            <a
+              href="tel:+79312040444"
+              class="header__phone"
+              >+7 931 204-04-44</a
+            >
+          </div>
+          <div class="footer__buttons-wrapper">
+            <a href="tel:+79312040444"
+              ><img
+                width="100%"
+                src="./icons/call-tel.png"
+                alt=""
+            /></a>
+            <a href="https://wa.me/79312040444"
+              ><img
+                width="100%"
+                src="./icons/call-mess.png"
+                alt=""
+            /></a>
+            <a href="#top"
+              ><img
+                width="100%"
+                src="./icons/top.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-select-region hidden">
+      <div class="modal-select-region__inner">
+        <ul class="modal-select-region__list">
+          <li class="modal-select-region__item region-select">Санкт-Петербург</li>
+          <li class="modal-select-region__item region-select">Дальний Восток</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="person-modal"
+      id="order-modal"
+    >
+      <div class="person-modal__inner">
+        <div class="person-modal__form">
+          <h2 class="person-modal__title">Оставить заявку специалисту</h2>
+          <form
+            action="#"
+            class="contacts__form"
+          >
+            <h2 class="contacts__form-label">Оставьте заявку — специалист свяжется с вами и поможет решить вашу задачу.</h2>
+            <label for="FIO2">
+              <input
+                class="input"
+                id="FIO2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">ФИО<span>*</span></span>
+            </label>
+            <label for="tel2">
+              <input
+                class="input"
+                id="tel2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">+7 (000) 000-00-00<span>*</span></span>
+            </label>
+            <label for="question">
+              <input
+                class="input"
+                id="question"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">Ваш вопрос<span>*</span></span>
+            </label>
+            <button
+              type="submit"
+              class="main-form__submit contacts__submit"
+            >
+              Отправить заявку
+            </button>
+            <label class="main-form__checkbox contacts__checkbox">
+              <input
+                type="checkbox"
+                required
+              />
+              <span class="custom-checkbox">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__unchecked"
+                >
+                  <path
+                    d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                    stroke="#7b4cfa"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__checked"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.886719"
+                    width="20"
+                    height="20"
+                    rx="3"
+                    fill="#7b4cfa"
+                  />
+                  <path
+                    d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              Соглашаюсь с <a href="">правилами пользования</a>
+            </label>
+          </form>
+        </div>
+        <div class="person-modal__image person-modal__image--order"></div>
+        <div class="person-modal__close"></div>
+      </div>
+    </div>
+    <div
+      class="person-modal"
+      id="question-modal"
+    >
+      <div class="person-modal__inner">
+        <div class="person-modal__form">
+          <h2 class="person-modal__title">Задать вопрос специалисту</h2>
+          <form
+            action="#"
+            class="contacts__form"
+          >
+            <h2 class="contacts__form-label">Оставьте заявку — специалист свяжется с вами и поможет решить вашу задачу.</h2>
+            <label for="FIO2">
+              <input
+                class="input"
+                id="FIO2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">ФИО<span>*</span></span>
+            </label>
+            <label for="tel2">
+              <input
+                class="input"
+                id="tel2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">+7 (000) 000-00-00<span>*</span></span>
+            </label>
+            <label for="question">
+              <input
+                class="input"
+                id="question"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">Ваш вопрос<span>*</span></span>
+            </label>
+            <button
+              type="submit"
+              class="main-form__submit contacts__submit"
+            >
+              Отправить заявку
+            </button>
+            <label class="main-form__checkbox contacts__checkbox">
+              <input
+                type="checkbox"
+                required
+              />
+              <span class="custom-checkbox">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__unchecked"
+                >
+                  <path
+                    d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                    stroke="#7b4cfa"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__checked"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.886719"
+                    width="20"
+                    height="20"
+                    rx="3"
+                    fill="#7b4cfa"
+                  />
+                  <path
+                    d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              Соглашаюсь с <a href="">правилами пользования</a>
+            </label>
+          </form>
+        </div>
+        <div class="person-modal__image person-modal__image--question"></div>
+        <div class="person-modal__close"></div>
+      </div>
+    </div>
+    <div
+      class="person-modal"
+      id="review-modal"
+    >
+      <div class="person-modal__inner">
+        <div class="person-modal__form">
+          <h2 class="person-modal__title">Насколько вы довольны сотрудничеством?</h2>
+          <form
+            action="#"
+            class="contacts__form"
+          >
+            <h2 class="contacts__form-label">Ваш отзыв поможет нам поддерживать качество услуг и улучшать сервис.</h2>
+            <label for="FIO2">
+              <input
+                class="input"
+                id="FIO2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">ФИО<span>*</span></span>
+            </label>
+            <label for="tel2">
+              <input
+                class="input"
+                id="tel2"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">+7 (000) 000-00-00<span>*</span></span>
+            </label>
+            <label for="question">
+              <input
+                class="input"
+                id="question"
+                type="text"
+                name="FIO"
+                placeholder=""
+                required
+              />
+              <span class="main-form__placeholder">Ваш честный отзыв<span>*</span></span>
+            </label>
+            <button
+              type="submit"
+              class="main-form__submit contacts__submit"
+            >
+              Оставить отзыв
+            </button>
+            <label class="main-form__checkbox contacts__checkbox">
+              <input
+                type="checkbox"
+                required
+              />
+              <span class="custom-checkbox">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__unchecked"
+                >
+                  <path
+                    d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                    stroke="#7b4cfa"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="custom-checkbox__checked"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.886719"
+                    width="20"
+                    height="20"
+                    rx="3"
+                    fill="#7b4cfa"
+                  />
+                  <path
+                    d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                    fill="white"
+                  />
+                </svg>
+              </span>
+              Соглашаюсь с <a href="">правилами пользования</a>
+            </label>
+          </form>
+        </div>
+        <div class="person-modal__image person-modal__image--review"></div>
+        <div class="person-modal__close"></div>
+      </div>
+    </div>
+
+    <script
+      src="./js/main.js"
+      type="module"
+    ></script>
+    <script
+      src="./js/QaTabs.js"
+      type="module"
+    ></script>
+  </body>
+</html>

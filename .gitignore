@@ -1,44 +1,30 @@
-# Node.js
+# Node
 node_modules/
-npm-debug.log
-yarn-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
 
-# VSCode
-.vscode/
+# Logs
+logs
+*.log
+*.csv
 
 # OS
 .DS_Store
 Thumbs.db
 
 # Build
-/dist/
-/build/
-*.log
+dist/
+build/
+out/
 
-# CSS/SCSS
+# SCSS
 *.css.map
 
-# Сборка и временные файлы
-*.tmp
-*.temp
+# VSCode
+.vscode/
 
-# Системные файлы
-.idea/
-*.sublime-workspace
-*.sublime-project
-
-# Кэш браузера
-.cache/
-
-# Сборка
-*.zip
-*.tar.gz
-
-# Личные настройки
+# Env
 .env
 .env.*
-
-# Сгенерированные файлы
-*.min.js
-*.min.css

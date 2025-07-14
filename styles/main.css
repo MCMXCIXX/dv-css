@@ -106,6 +106,9 @@ main {
     padding: 3.75rem 0 0.625rem 0;
   }
 }
+.promo--blog {
+  background: transparent;
+}
 .promo__title {
   font-weight: 700;
   font-size: clamp(1.625rem, 4vw, 2.875rem);
@@ -152,6 +155,11 @@ main {
   .header-wrapper--person {
     background-position: top;
   }
+}
+.header-wrapper--blog {
+  background-image: url(../images/blog/header-bg.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .header-wrapper--policy {
   padding-bottom: 100px;
@@ -1853,6 +1861,53 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
   }
 }
 
+.blog-tags--padding {
+  padding-top: 6.25rem;
+  padding-bottom: 3.375rem;
+}
+.blog-tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.125rem;
+}
+.blog-tags__item {
+  padding: 1.1875rem 1.875rem;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #7752f6 0%, #20d993 100%);
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+  line-height: 80%;
+  cursor: pointer;
+}
+.blog-tags__item.active {
+  background: #3c3c3c;
+}
+
+.blog__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 23px;
+}
+.blog__image-wrapper {
+  border-radius: 40px;
+  height: 550px;
+  position: relative;
+}
+.blog-card__tag {
+  position: absolute;
+  top: 48px;
+  right: 32px;
+  background: linear-gradient(90deg, #7654f4 0%, #1fdc91 100%);
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+}
+.blog-card__image {
+  width: 100%;
+  height: 100%;
+}
+
 .person-main {
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 14.4%, #fff 25.4%);
   padding-bottom: 6.25rem;
@@ -1864,6 +1919,11 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
   padding-bottom: 6.25rem;
   margin-bottom: -6.25rem;
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
+}
+
+.green-text {
+  font-weight: 800;
+  color: #00bf80;
 }
 
 /*# sourceMappingURL=main.css.map */

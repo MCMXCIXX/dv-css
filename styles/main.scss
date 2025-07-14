@@ -30,6 +30,8 @@
 @use "blocks/cookie-banner";
 @use "blocks/not-found";
 @use "blocks/contacts-form";
+@use "blocks/blog-tags";
+@use "blocks/blog";
 
 .person-main {
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 14.4%, #fff 25.4%);
@@ -42,4 +44,8 @@
   padding-bottom: rem(100);
   margin-bottom: rem(-100);
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
+}
+.green-text {
+  font-weight: 800;
+  color: #00bf80;
 }

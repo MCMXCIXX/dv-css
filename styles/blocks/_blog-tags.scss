@@ -1,0 +1,27 @@
+@use "../helpers" as *;
+
+.blog-tags {
+  &--padding {
+    padding-top: rem(100);
+    padding-bottom: rem(54);
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(18);
+  }
+
+  &__item {
+    padding: rem(19) rem(30);
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7752f6 0%, #20d993 100%);
+    font-weight: 400;
+    font-size: 25px;
+    color: #fff;
+    line-height: 80%;
+    cursor: pointer;
+    &.active {
+      background: #3c3c3c;
+    }
+  }
+}

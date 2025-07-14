@@ -7,15 +7,19 @@
   margin-bottom: -1px;
   &--transparent {
     background-color: transparent;
-    
   }
-  &-wrapper{
-    &--person{
+  &-wrapper {
+    &--person {
       background-image: url(../images/person/bg-person.jpg);
       background-size: cover;
       @include tablet {
         background-position: top;
       }
+    }
+    &--blog {
+      background-image: url(../images/blog/header-bg.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     &--policy {
       padding-bottom: 100px;
@@ -109,22 +113,4 @@
     font-size: rem(14);
     color: #00bf80;
   }
-}
-.container {
-}
-.header__container {
-}
-.logo {
-}
-.logo__image {
-}
-.nav {
-}
-.nav__list {
-}
-.header__contacts {
-}
-.header__phone {
-}
-.header__city {
 }
