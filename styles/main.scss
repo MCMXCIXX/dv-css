@@ -32,6 +32,20 @@
 @use "blocks/contacts-form";
 @use "blocks/blog-tags";
 @use "blocks/blog";
+@use "blocks/article-meta";
+@use "blocks/article";
+@use "blocks/article-transform";
+@use "blocks/article-trends";
+@use "blocks/feedback-block";
+@use "blocks/hero-search";
+@use "blocks/toc";
+@use "blocks/term";
+@use "blocks/solutions-hero";
+@use "blocks/solutions-intro";
+@use "blocks/solutions-note";
+@use "blocks/solutions-types";
+@use "blocks/solutions-template-request";
+@use "blocks/solutions-difference";
 
 .person-main {
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 14.4%, #fff 25.4%);

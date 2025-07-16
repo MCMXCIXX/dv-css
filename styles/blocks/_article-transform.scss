@@ -1,0 +1,41 @@
+@use "../helpers" as *;
+
+.article-transform {
+  border-radius: 100px 100px 0 0;
+  color: #fff;
+  background: #3c3c3c;
+  overflow: hidden;
+  padding-bottom: 150px;
+  margin-bottom: -150px;
+  @include tablet {
+    border-radius: 50px 50px 0 0;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 120%;
+    @include tablet {
+      font-size: 30px;
+    }
+    &--accent {
+      color: #3c3c3c;
+      -webkit-text-stroke: 2px #fff;
+      text-stroke: 2px #fff;
+      @include tablet {
+        -webkit-text-stroke: 1px #fff;
+        text-stroke: 1px #fff;
+      }
+    }
+  }
+  &__inner {
+  }
+  &__image {
+    margin-right: 40px;
+    float: left;
+    @include tablet {
+      margin-top: 50px;
+      float: none;
+      width: 100%;
+    }
+  }
+}

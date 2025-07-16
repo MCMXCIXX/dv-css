@@ -1,0 +1,37 @@
+@use "../helpers" as *;
+
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #757575;
+  padding-top: 20px;
+  gap: 30px;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0;
+  }
+  &__time {
+    align-items: center;
+    display: flex;
+
+    gap: 7px;
+  }
+  .article-meta__rating {
+  }
+  &__date {
+    flex-grow: 1;
+    text-align: end;
+  }
+}
+
+.integrate-bg {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}

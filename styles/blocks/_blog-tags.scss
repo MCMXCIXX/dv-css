@@ -4,6 +4,10 @@
   &--padding {
     padding-top: rem(100);
     padding-bottom: rem(54);
+    @include tablet {
+      padding-top: rem(50);
+      padding-bottom: rem(27);
+    }
   }
   &__list {
     display: flex;
@@ -12,14 +16,19 @@
   }
 
   &__item {
+    display: flex;
+    width: fit-content;
     padding: rem(19) rem(30);
     border-radius: 30px;
     background: linear-gradient(90deg, #7752f6 0%, #20d993 100%);
     font-weight: 400;
-    font-size: 25px;
+    @include fluid-text(25, 16);
     color: #fff;
     line-height: 80%;
     cursor: pointer;
+    @include tablet {
+      padding: 10px 15px;
+    }
     &.active {
       background: #3c3c3c;
     }

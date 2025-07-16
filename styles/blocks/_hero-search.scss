@@ -1,0 +1,71 @@
+@use "../helpers" as *;
+
+.hero-search {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 51px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 97px;
+  @include tablet {
+    gap: 30px;
+    font-size: 60px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 118%;
+    @include tablet {
+      font-size: 35px;
+    }
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 878px;
+    margin: 0 auto;
+    color: #88888c;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 81%;
+    cursor: pointer;
+    @include tablet {
+      font-size: 20px;
+      gap: 10px;
+    }
+  }
+  &__input {
+    font-size: 27px;
+    color: #88888c;
+    flex-grow: 1;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  &__reset {
+    display: flex;
+    justify-content: flex-end;
+    @include tablet {
+        display: none;
+    }
+  }
+  &__input::placeholder {
+    font-size: 27px;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 170%;
+    @include tablet {
+      font-size: 21px;
+    }
+  }
+}
