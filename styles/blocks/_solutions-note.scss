@@ -1,0 +1,13 @@
+@use "../helpers" as *;
+
+.solutions-note {
+  background: linear-gradient(90deg, rgba(33, 217, 147, 0.29) 0%, rgba(114, 90, 240, 0.29) 100%);
+  border-radius: 56px;
+  padding: 20px;
+  &--red {
+    background: linear-gradient(90deg, rgba(244, 120, 119, 0.29) 0%, rgba(36, 33, 33, 0.29) 100%);
+  }
+  @include tablet {
+    padding: 20px;
+  }
+}

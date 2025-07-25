@@ -5,8 +5,12 @@
   @include tablet {
     padding: rem(60) 0 rem(10) 0;
   }
-  &--blog{
+  &--blog {
     background: transparent;
+  }
+  &--main {
+    background: transparent;
+    padding-bottom: 70px;
   }
 
   &__title {
@@ -17,7 +21,6 @@
     color: #fff;
     max-width: rem(1121);
     margin: 0 auto;
-
   }
   &__subtitle {
     padding-top: rem(20);
@@ -30,10 +33,14 @@
     margin: 0 auto;
   }
   &__main-form {
-    padding: rem(66) 0 rem(150) 0;
+    padding: 40px 0;
+    & .main-form__checkbox {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
     @include tablet {
-      padding: rem(30) 0 rem(70) 0;
+          padding: 20px 0;
     }
   }
 }
-

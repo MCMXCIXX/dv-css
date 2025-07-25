@@ -1,0 +1,125 @@
+@use "../helpers" as *;
+
+.solutions-difference {
+  padding: 20px 16px;
+  &__table {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 13px;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 100%;
+    color: #3c3c3c;
+    @include tablet {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__cell {
+    border-radius: 18px;
+    background: #ededed;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    &--2 {
+      grid-column-start: 1;
+      grid-row-start: 2;
+    }
+
+    &--3 {
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
+
+    &--4 {
+      grid-column-start: 1;
+      grid-row-start: 4;
+    }
+
+    &--5 {
+      grid-column-start: 1;
+      grid-row-start: 5;
+    }
+
+    &--6 {
+      grid-column-start: 1;
+      grid-row-start: 6;
+    }
+
+    &--7 {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+
+    &--8 {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    &--9 {
+      grid-column-start: 2;
+      grid-row-start: 3;
+    }
+
+    &--10 {
+      grid-column-start: 2;
+      grid-row-start: 4;
+    }
+
+    &--11 {
+      grid-column-start: 2;
+      grid-row-start: 5;
+    }
+
+    &--12 {
+      grid-column-start: 2;
+      grid-row-start: 6;
+    }
+
+    &--13 {
+      grid-column-start: 3;
+      grid-row-start: 1;
+    }
+
+    &--14 {
+      grid-column-start: 3;
+      grid-row-start: 2;
+    }
+
+    &--15 {
+      grid-column-start: 3;
+      grid-row-start: 3;
+    }
+
+    &--16 {
+      grid-column-start: 3;
+      grid-row-start: 4;
+    }
+
+    &--17 {
+      grid-column-start: 3;
+      grid-row-start: 5;
+    }
+
+    &--head {
+      font-weight: 700;
+      justify-content: center;
+      background: linear-gradient(90deg, rgba(33, 217, 147, 0.29) 0%, rgba(114, 90, 240, 0.29) 100%);
+    }
+  }
+}
+
+.cta-btn {
+  box-shadow: 3px 8px 0 0 #000, 3px 7px 0 0 #000, 3px 6px 0 0 #000, 2px 5px 0 0 #000, 2px 4px 0 0 #000, 1px 3px 0 0 #000, 1px 2px 0 0 #000, 0px 1px 0 0 #000;
+  background: #7b4cfa;
+  padding: 6px 13px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  color: #fff;
+  @include tablet {
+    font-size: 20px;
+  }
+}

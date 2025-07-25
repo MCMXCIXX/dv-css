@@ -1,0 +1,19 @@
+@use "../helpers" as *;
+
+.solutions-hero {
+
+  &__title {
+    max-width: 1017px;
+    margin: 0 auto;
+    padding: 442px 0 50px 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 118%;
+    letter-spacing: 0.02em;
+    color: #fff;
+    @include tablet {
+        padding: 200px 0 25px 0;
+        font-size: 35px;
+    }
+  }
+}

@@ -8,6 +8,7 @@
   &--transparent {
     background-color: transparent;
   }
+
   &-wrapper {
     &--person {
       background-image: url(../images/person/bg-person.jpg);
@@ -16,10 +17,41 @@
         background-position: top;
       }
     }
+    &--terms {
+      background-image: url(../images/terms/terms-bg.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 35px;
+    }
     &--blog {
       background-image: url(../images/blog/header-bg.gif);
       background-size: cover;
       background-repeat: no-repeat;
+    }
+<<<<<<< HEAD
+    &--main {
+      background-image: url(../images/main/main.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+=======
+>>>>>>> 79f0345b0a3f97c7c70d93b239a5f3f02f04e626
+    &--solutions {
+      background-image: url(../images/solutions/bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 28px;
+    }
+    &--blog-details {
+      background-image: url(../images/blog/blog-details.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      min-height: 870px;
+      @include tablet {
+        min-height: auto;
+      }
     }
     &--policy {
       padding-bottom: 100px;

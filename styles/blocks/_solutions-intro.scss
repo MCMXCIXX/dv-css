@@ -1,0 +1,41 @@
+@use "../helpers" as *;
+
+.solutions-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  &__content {
+    font-size: 27px;
+    line-height: 170%;
+    color: #3c3c3c;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+}
+
+.main-solutions {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 170%;
+  color: #3c3c3c;
+  @include tablet {
+    font-size: 20px;
+  }
+}
+.main-solutions__title {
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 120%;
+  color: #3c3c3c;
+  @include tablet {
+    font-size: 35px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

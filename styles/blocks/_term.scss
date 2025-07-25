@@ -1,0 +1,70 @@
+.term {
+  background: #f7f7f7;
+  border-radius: 16px;
+  padding: 32px 40px 32px 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px 0 rgba(60, 60, 60, 0.04);
+  transition: box-shadow 0.2s;
+  max-width: 100%;
+  &.important {
+    background: #f9f9a3;
+  }
+  @media (max-width: 600px) {
+    padding: 20px 12px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 120%;
+    color: #3c3c3c;
+    flex: 1;
+    @media (max-width: 600px) {
+      font-size: 22px;
+    }
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+    background: url("../icons/terms-arrow.svg") no-repeat center/contain;
+    transition: transform 0.3s;
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__body {
+    margin-top: 16px;
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+    display: block;
+    transition: max-height 0.3s, opacity 0.3s;
+    max-height: 1000px;
+    opacity: 1;
+    overflow: hidden;
+    &.collapsed {
+      max-height: 0;
+      opacity: 0;
+      margin-top: 0;
+      padding: 0;
+    }
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
+  }
+}

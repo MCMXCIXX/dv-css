@@ -1,0 +1,103 @@
+@use "../helpers" as *;
+
+.feedback-block {
+  background: #00c8ff;
+  border-radius: 54px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    border-radius: 34px;
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  & label {
+    position: relative;
+  }
+  & input {
+    background: #757575;
+    height: 60px;
+    width: 100%;
+    padding-left: 20px;
+    color: #fff;
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.9375rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #fff;
+  }
+
+  &__mini-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 120%;
+    width: 100%;
+  }
+  &__submit {
+    margin: 0;
+    margin-top: 40px;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    @include tablet {
+        display: block;
+        margin: 30px auto;
+    }
+  }
+  &__checkbox {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #fff;
+  }
+  &__form-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    .input1 {
+      grid-column: span 2 / span 2;
+    }
+
+    .input2 {
+      grid-row-start: 2;
+    }
+
+    .input3 {
+      grid-row-start: 2;
+    }
+
+    .input4 {
+      grid-column: span 2 / span 2;
+    }
+
+    gap: 20px;
+  }
+
+  &__text {
+    max-width: 481px;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 120%;
+    color: #fff;
+
+    @include tablet {
+        font-size: 20px;
+    }
+  }
+  &__form {
+    max-width: 705px;
+  }
+}

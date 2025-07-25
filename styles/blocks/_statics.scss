@@ -1,0 +1,49 @@
+@use "../helpers" as *;
+
+.statistics {
+  padding: 38px 0;
+  background-color: var(--main-green);
+  color: #fff;
+}
+.statistics__list {
+  display: flex;
+  max-width: 914px;
+  margin: 0 auto;
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+  }
+}
+.statistics__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  max-width: 337px;
+  padding: 0 40px;
+  border-right: 2px solid #fff;
+  max-height: 40px;
+  @include tablet {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    border: none;
+    max-width: fit-content;
+  }
+}
+.statistics__item:last-child {
+  border-right: none;
+}
+.statistics__value {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 148%;
+  margin: 0;
+}
+.statistics__text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 118%;
+  hyphens: auto;
+  margin: 0;
+}

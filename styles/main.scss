@@ -32,6 +32,24 @@
 @use "blocks/contacts-form";
 @use "blocks/blog-tags";
 @use "blocks/blog";
+@use "blocks/article-meta";
+@use "blocks/article";
+@use "blocks/article-transform";
+@use "blocks/article-trends";
+@use "blocks/feedback-block";
+@use "blocks/hero-search";
+@use "blocks/toc";
+@use "blocks/term";
+@use "blocks/solutions-hero";
+@use "blocks/solutions-intro";
+@use "blocks/solutions-note";
+@use "blocks/solutions-types";
+@use "blocks/solutions-template-request";
+@use "blocks/solutions-difference";
+<<<<<<< HEAD
+@use "blocks/statics";
+=======
+>>>>>>> 79f0345b0a3f97c7c70d93b239a5f3f02f04e626
 
 .person-main {
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 14.4%, #fff 25.4%);

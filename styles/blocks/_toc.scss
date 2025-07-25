@@ -1,0 +1,46 @@
+@use "../helpers" as *;
+
+.toc {
+  margin-bottom: 40px;
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 118%;
+    letter-spacing: 0.02em;
+    color: #3c3c3c;
+    @include tablet {
+        font-size: 40px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+    li {
+      position: relative;
+      padding-left: 35px;
+      font-size: 27px;
+      color: #444;
+      line-height: 1.5;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 25px;
+        height: 25px;
+        background: url("../images/terms/checked.png") no-repeat center/contain;
+      }
+    }
+  }
+}
