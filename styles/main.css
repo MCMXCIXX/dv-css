@@ -1,10 +1,9 @@
-/* Error: expected selector.
+/* Error: expected "{".
  *    ,
- * 30 |     }
- *    |      ^
+ * 51 | @use "blocks/statics";
+ *    |                      ^
  *    '
- *   styles\blocks\_header.scss 30:6  @use
- *   styles\main.scss 9:1             root stylesheet */
+ *   styles\main.scss 51:22  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: expected selector.\a    \2577 \a 30 \2502      }\d\a    \2502       ^\a    \2575 \a   styles\\blocks\\_header.scss 30:6  @use\a   styles\\main.scss 9:1             root stylesheet";
+  content: 'Error: expected "{".\a    \2577 \a 51 \2502  @use "blocks/statics";\d\a    \2502                       ^\a    \2575 \a   styles\\main.scss 51:22  root stylesheet';
 }
