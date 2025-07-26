@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="./styles/main.css"
     />
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
 
   <body>
@@ -184,7 +185,7 @@
                     placeholder=""
                     required
                   />
-                  <span class="main-form__placeholder">Имя<span>*</span></span>
+                  <span class="main-form__placeholder custom-placeholder">Имя<span>*</span></span>
                 </label>
                 <label for="phone">
                   <input
@@ -195,19 +196,20 @@
                     placeholder=""
                     required
                   />
-                  <span class="main-form__placeholder">Телефон<span>*</span></span>
+                  <span class="main-form__placeholder custom-placeholder">Телефон<span>*</span></span>
                 </label>
                 <button
                   type="submit"
-                  class="main-form__submit"
+                  class="main-form__submit submit-btn"
                 >
                   Заказать звонок
                 </button>
               </div>
-              <label class="main-form__checkbox">
+              <label class="main-form__checkbox checkbox_privacy_policy">
                 <input
                   type="checkbox"
                   required
+                  name="privacy"
                 />
                 <span class="custom-checkbox">
                   <svg
@@ -267,15 +269,206 @@
             <p class="statistics__value">10+</p>
             <p class="statistics__text">Лет в веб-разработке</p>
           </li>
-           <li class="statistics__item">
+          <li class="statistics__item">
             <p class="statistics__value">150+</p>
             <p class="statistics__text">Завершённых проектов</p>
           </li>
-           <li class="statistics__item">
+          <li class="statistics__item">
             <p class="statistics__value">15+</p>
             <p class="statistics__text">Регионов — география клиентов</p>
           </li>
         </ul>
+      </section>
+      <section class="calculator-section container">
+        <div class="calculator-section__container">
+          <!-- Левый блок: Калькулятор -->
+          <form class="calculator">
+            <h2 class="calculator__title">Калькулятор стоимости сайта</h2>
+            <p class="calculator__description">
+              Расчет стоимости — базовый набор задач, дизайн и функционал — всё посчитаем. Хотите точную смету? Заполните калькулятор и оставьте заявку — все посчитаем.
+            </p>
+
+            <div class="calculator__subsection">
+              <h3 class="calculator__subtitle">1. Тип сайта и шаблон:</h3>
+              <ul class="calculator__list">
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="landing"
+                    name="landing"
+                    
+                  />
+                  <label
+                    for="landing"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span><span>Лендинг (одностраничник) на шаблоне — от 25 000 ₽</span></label
+                  >
+                </li>
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="corp-template"
+                    name="corp-template"
+                  />
+                  <label
+                    for="corp-template"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Корпоративный сайт на шаблоне — от 50 000 ₽</label
+                  >
+                </li>
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="shop-template"
+                    name="shop-template"
+                  />
+                  <label
+                    for="shop-template"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Интернет-магазин на шаблоне — от 70 000 ₽</label
+                  >
+                </li>
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="corp-custom"
+                    name="corp-custom"
+                  />
+                  <label
+                    for="corp-custom"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Корпоративный сайт на шаблоне — от 50 000 ₽</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="calculator__subsection">
+              <h3 class="calculator__subtitle">2. Функционал интеграций:</h3>
+              <ul class="calculator__list">
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="form"
+                    name="form"
+                  />
+                  <label
+                    for="form"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Простая форма обратной связи — +5000 ₽</label
+                  >
+                </li>
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="online-chat"
+                    name="online-chat"
+                  />
+                  <label
+                    for="online-chat"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Онлайн-чат — +10 000 ₽</label
+                  >
+                </li>
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="payment"
+                    name="payment"
+                  />
+                  <label
+                    for="payment"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Платежи на сайте (онлайн-касса) — +20 000 ₽</label
+                  >
+                </li>
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="crm"
+                    name="crm"
+                  />
+                  <label
+                    for="crm"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Интеграция с CRM и сервисами — от +15 000 ₽</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="calculator__subsection">
+              <h3 class="calculator__subtitle">3. Контент</h3>
+              <ul class="calculator__list">
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="text-photo"
+                    name="text-photo"
+                  />
+                  <label
+                    for="text-photo"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Статические (тексты и фото клиента) — включено</label
+                  >
+                </li>
+                <li class="calculator__item">
+                  <input
+                    type="checkbox"
+                    class="calculator__checkbox"
+                    id="copywriting"
+                    name="copywriting"
+                  />
+                  <label
+                    for="copywriting"
+                    class="calculator__label"
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Подготовка и написание уникального контента — от +15 000 ₽</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="calculator__approximate-price"><p class="calculator__approximate-text">Примерная итоговая стоимость:<span class="color-red">*</span></p><button class="calculator__approximate-button">Рассчитать и получить скидку</button></div>
+
+
+            <button type="submit ">Отправить заявку на точный расчет</button>
+            <p class="calculator__note"><span class="color-red">*</span>Предложение итоговой стоимости. Рассчитать и получить скидку. Отправить заявку на точный расчет</p>
+          </form>
+
+          <!-- Правые блоки -->
+          <div class="help-block">
+            <h2 class="help-block__title">Чем мы можем помочь вашему бизнесу?</h2>
+            <p class="help-block__text">
+              Сейчас — не время терять клиентов и интернет. Это инвестиция в продвижение компании и автоматизацию процессов. Потенциальные клиенты начинают знакомство с сайта
+              компании.
+            </p>
+            <p class="help-block__text">
+              Если ваш сайт морально устарел, вы теряете доверие аудитории и позиции в поисковиках. Современный сайт повышает лояльность клиентов и упрощает взаимодействие с ними.
+            </p>
+            <p class="help-block__text">Мы поможем сформировать имидж, привлекать клиентов и увеличивать продажи бизнеса в конкурентной среде.</p>
+          </div>
+
+          <div class="attract-block">
+            <h2 class="attract-block__title">Привлекайте больше трафика и увеличивайте продажи</h2>
+            <p class="attract-block__text">Мы создаем сайты, которые не просто выглядят стильно, а приносят реальную пользу — привлекают клиентов и увеличивают продажи.</p>
+            <p class="attract-block__text">Современный подход к разработке — приносят клиенты.</p>
+            <div class="attract-block__chart">
+              <!-- Здесь можно добавить SVG или CSS для барчарта -->
+              <div class="attract-block__bar attract-block__bar--low">Маркетинг с CRM, IC.</div>
+              <div class="attract-block__bar attract-block__bar--medium">Сайт + автоматизация, заявки, SEO и продвижение.</div>
+              <div class="attract-block__bar attract-block__bar--high">Магазин с CRM, IC.</div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <section class="blog-main-block container">

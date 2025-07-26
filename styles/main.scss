@@ -46,13 +46,11 @@
 @use "blocks/solutions-types";
 @use "blocks/solutions-template-request";
 @use "blocks/solutions-difference";
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 @use "blocks/statics";
-=======
->>>>>>> 79f0345b0a3f97c7c70d93b239a5f3f02f04e626
-=======
->>>>>>> 79f0345b0a3f97c7c70d93b239a5f3f02f04e626
+@use "blocks/calculator-section";
+
+
 
 .person-main {
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 14.4%, #fff 25.4%);
