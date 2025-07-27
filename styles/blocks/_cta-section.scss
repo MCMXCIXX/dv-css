@@ -1,0 +1,45 @@
+@use "../helpers" as *;
+
+.cta-section {
+  &__inner {
+    padding: 37px 52px;
+    background-color: var(--main-green);
+    border-radius: 32px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    @include tablet {
+      flex-direction: column;
+      padding: 15px 16px;
+      gap: 30px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    @include tablet {
+      font-size: 25px;
+    }
+  }
+}
+button.cta-section__button {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 140%;
+  display: flex;
+  padding: 15px;
+  color: #fff;
+  flex-wrap: nowrap;
+  border-radius: 70px;
+  background-color: var(--main-purple);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: fit-content;
+  @include tablet {
+    width: 100%;
+    font-size: 14px;
+  }
+}

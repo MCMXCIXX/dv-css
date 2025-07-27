@@ -1,0 +1,29 @@
+@use "../helpers" as *;
+
+.help-block {
+  border-radius: 32px;
+  background: #010205;
+  background-image: url(../images/new-main/right-block-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 43px;
+  @include tablet {
+    padding: 16px;
+    background-position: bottom right;
+  }
+  &__title {
+    color: var(--main-green);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 141%;
+  }
+}

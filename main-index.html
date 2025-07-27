@@ -11,7 +11,10 @@
       rel="stylesheet"
       href="./styles/main.css"
     />
-    <link rel="stylesheet" href="./styles/style.css">
+    <link
+      rel="stylesheet"
+      href="./styles/style.css"
+    />
   </head>
 
   <body>
@@ -293,24 +296,24 @@
               <ul class="calculator__list">
                 <li class="calculator__item">
                   <input
-                    type="checkbox"
+                    type="radio"
                     class="calculator__checkbox"
                     id="landing"
                     name="landing"
-                    
                   />
                   <label
                     for="landing"
                     class="calculator__label"
-                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span><span>Лендинг (одностраничник) на шаблоне — от 25 000 ₽</span></label
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span
+                    ><span>Лендинг (одностраничник) на шаблоне — от 25 000 ₽</span></label
                   >
                 </li>
                 <li class="calculator__item">
                   <input
-                    type="checkbox"
+                    type="radio"
                     class="calculator__checkbox"
                     id="corp-template"
-                    name="corp-template"
+                    name="landing"
                   />
                   <label
                     for="corp-template"
@@ -320,10 +323,10 @@
                 </li>
                 <li class="calculator__item">
                   <input
-                    type="checkbox"
+                    type="radio"
                     class="calculator__checkbox"
                     id="shop-template"
-                    name="shop-template"
+                    name="landing"
                   />
                   <label
                     for="shop-template"
@@ -333,10 +336,11 @@
                 </li>
                 <li class="calculator__item">
                   <input
-                    type="checkbox"
+                    type="radio"
                     class="calculator__checkbox"
                     id="corp-custom"
-                    name="corp-custom"
+                    name="landing"
+                    value="Корпоративный сайт на шаблоне — от 50 000 ₽"
                   />
                   <label
                     for="corp-custom"
@@ -431,16 +435,24 @@
                   <label
                     for="copywriting"
                     class="calculator__label"
-                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Подготовка и написание уникального контента — от +15 000 ₽</label
+                    ><span class="calculator__custom-checkbox"><span class="calculator__custom-checkbox-inner"></span></span>Подготовка и написание уникального контента — от +15
+                    000 ₽</label
                   >
                 </li>
               </ul>
             </div>
 
-            <div class="calculator__approximate-price"><p class="calculator__approximate-text">Примерная итоговая стоимость:<span class="color-red">*</span></p><button class="calculator__approximate-button">Рассчитать и получить скидку</button></div>
+            <div class="calculator__approximate-price">
+              <p class="calculator__approximate-text">Примерная итоговая стоимость:<span class="color-red">*</span></p>
+              <button class="calculator__approximate-button">Рассчитать и получить скидку</button>
+            </div>
 
-
-            <button type="submit ">Отправить заявку на точный расчет</button>
+            <button
+              type="submit"
+              class="calculator__submit"
+            >
+              Отправить заявку на точный расчет
+            </button>
             <p class="calculator__note"><span class="color-red">*</span>Предложение итоговой стоимости. Рассчитать и получить скидку. Отправить заявку на точный расчет</p>
           </form>
 
@@ -448,24 +460,116 @@
           <div class="help-block">
             <h2 class="help-block__title">Чем мы можем помочь вашему бизнесу?</h2>
             <p class="help-block__text">
-              Сейчас — не время терять клиентов и интернет. Это инвестиция в продвижение компании и автоматизацию процессов. Потенциальные клиенты начинают знакомство с сайта
-              компании.
+              <b class="text-green-main">Сегодня сайт</b> — это не просто визитка в интернете. Это полноценный инструмент продаж, коммуникации и автоматизации процессов.
+              Потенциальные клиенты начинают знакомство с вашей компанией именно с сайта.
             </p>
             <p class="help-block__text">
-              Если ваш сайт морально устарел, вы теряете доверие аудитории и позиции в поисковиках. Современный сайт повышает лояльность клиентов и упрощает взаимодействие с ними.
+              Если он работает медленно, <b class="text-green-main">выглядит устаревшим или не адаптирован под мобильные устройства</b> — вы теряете доверие и деньги. Современный
+              сайт должен быть удобным, быстрым и понятным. Он помогает формировать имидж, привлекать клиентов и усиливать позиции бизнеса в конкурентной среде.
             </p>
-            <p class="help-block__text">Мы поможем сформировать имидж, привлекать клиентов и увеличивать продажи бизнеса в конкурентной среде.</p>
           </div>
 
           <div class="attract-block">
-            <h2 class="attract-block__title">Привлекайте больше трафика и увеличивайте продажи</h2>
-            <p class="attract-block__text">Мы создаем сайты, которые не просто выглядят стильно, а приносят реальную пользу — привлекают клиентов и увеличивают продажи.</p>
-            <p class="attract-block__text">Современный подход к разработке — приносят клиенты.</p>
-            <div class="attract-block__chart">
-              <!-- Здесь можно добавить SVG или CSS для барчарта -->
-              <div class="attract-block__bar attract-block__bar--low">Маркетинг с CRM, IC.</div>
-              <div class="attract-block__bar attract-block__bar--medium">Сайт + автоматизация, заявки, SEO и продвижение.</div>
-              <div class="attract-block__bar attract-block__bar--high">Магазин с CRM, IC.</div>
+            <h2 class="attract-block__title"><span class="attract-block__title-line"></span> Привлекайте больше трафика и увеличивайте продажи</h2>
+            <p class="attract-block__text">
+              Мы создаём сайты, которые не просто выглядят стильно, а действительно работают на результат — привлекают клиентов и стимулируют рост продаж.
+            </p>
+            <p class="attract-block__text">
+              Интегрируем с <b class="text-green-main">CRM, 1С,</b> маркетинговыми сервисами — чтобы автоматизировать заявки, вести учёт и повышать продажи;
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section container">
+        <div class="cta-section__inner">
+          <h2 class="cta-section__title">Помогаем бизнесу расти с помощью мощных сайтов и цифровых решений. Готовы начать?</h2>
+          <button class="open_callback cta-section__button">
+            Да! сделайте мне крутой сайт!<svg
+              width="28"
+              height="25"
+              viewBox="0 0 28 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.83334 12.5H22.1667"
+                stroke="#00BF80"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 5.5L22.1667 12.5L14 19.5"
+                stroke="#00BF80"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="section-border section-border--green banner-wrapper">
+        <div class="container">
+          <div class="banner">
+            <div class="banner__left-side">
+              <p class="banner__subtitle">Центр Сопровождения сайтов</p>
+              <h2 class="banner__title">Почему <span class="highlight">выбирают</span> нас?</h2>
+            </div>
+            <div class="banner__right-side">
+              <div class="banner__btns-wrapper">
+                <a class="banner__btn">
+                  <h3 class="banner__btn-title">Золотой партнёр 1С-Битрикс</h3>
+                  <img
+                    src="./images/new-main/sert.png"
+                    class="banner__btn-image"
+                    alt=""
+                  />
+                  <p class="banner__btn-text">Смотреть сертификат</p>
+                </a>
+                <a class="banner__btn">
+                  <h3 class="banner__btn-title">Поддержка 24/7</h3>
+                  <img
+                    src="images/new-main/support.png"
+                    class="banner__btn-image"
+                    alt=""
+                  />
+                  <p class="banner__btn-text">Связаться с нами</p>
+                </a>
+              </div>
+              <ul class="banner__list">
+                <li class="banner__list-item"><span class="banner__list-value">100%</span>Прозрачность в сроках и бюджете</li>
+                <li class="banner__list-item"><span class="banner__list-value">10+</span>Лет в веб - разработке</li>
+                <li class="banner__list-item"><span class="banner__list-value">50+</span>Проектов на WordPress <br> за последний год</li>
+                <li class="banner__list-item"><span class="banner__list-value">90%</span>Клиентов возвращаются с новыми задачами</li>
+                <li class="">Создаем — запускаем — поддерживаем.</li>
+                <button class="open_callback cta-section__button">
+                  Оставить заявку на разработку сайта <svg
+                    width="28"
+                    height="25"
+                    viewBox="0 0 28 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.83334 12.5H22.1667"
+                      stroke="#00BF80"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14 5.5L22.1667 12.5L14 19.5"
+                      stroke="#00BF80"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </ul>
             </div>
           </div>
         </div>

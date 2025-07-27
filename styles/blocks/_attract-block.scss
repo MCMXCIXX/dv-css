@@ -1,0 +1,46 @@
+@use "../helpers" as *;
+
+.attract-block {
+  border-radius: 32px;
+  background: #010205;
+  background-image: url(../images/new-main/right-block-bg-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+//   max-height: 350px;
+  color: #fff;
+  padding: 43px;
+  @include tablet {
+    padding: 16px;
+    background-position: top left;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 126%;
+    letter-spacing: -0.03em;
+    color: var(--main-green);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 32px;
+    @include tablet {
+        font-size: 25px;
+    }
+    &-line {
+      height: 1px;
+      width: 67px;
+      display: flex;
+      background-color: #fff;
+    }
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    &:last-child {
+        max-width: 303px;
+    }
+  }
+}

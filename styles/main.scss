@@ -46,9 +46,12 @@
 @use "blocks/solutions-types";
 @use "blocks/solutions-template-request";
 @use "blocks/solutions-difference";
-
+@use "blocks/help-block";
+@use "blocks/attract-block";
+@use "blocks/cta-section";
 @use "blocks/statics";
 @use "blocks/calculator-section";
+@use "blocks/banner";
 
 
 
@@ -67,4 +70,8 @@
 .green-text {
   font-weight: 800;
   color: #00bf80;
+}
+
+.text-green-main {
+  color: var(--main-green);
 }

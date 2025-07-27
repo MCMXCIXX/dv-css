@@ -31,3 +31,11 @@
 .color-red {
   color: #df1a1a;
 }
+
+.section-border {
+  border-radius: 32px;
+  &--green {
+    background: linear-gradient(180deg, #0f4157 4.81%, #00bf80 41.83%, #2a2525 93.75%);
+    border: 1px solid #538b62;
+  }
+}
