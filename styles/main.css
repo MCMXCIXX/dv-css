@@ -60,6 +60,12 @@
   background: linear-gradient(180deg, #0f4157 4.81%, #00bf80 41.83%, #2a2525 93.75%);
   border: 1px solid #538b62;
 }
+.section-border--black {
+  background-image: url(../images/new-main/border-section-bg-dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
 
 html {
   scroll-behavior: smooth;
@@ -3931,6 +3937,116 @@ button.cta-section__button {
 }
 .steps__item:hover {
   transform: translateY(-20px);
+}
+
+.projects {
+  color: #fff;
+}
+.projects__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 53px;
+}
+.projects__tabs-wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 47px;
+}
+@media (max-width: 1023.98px) {
+  .projects__tabs-wrapper {
+    gap: 10px;
+  }
+}
+.projects__tab {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 13px 62px;
+  cursor: pointer;
+}
+.projects__tab.active {
+  background: var(--main-purple);
+  border-color: var(--main-purple);
+}
+.projects__list {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 66px;
+}
+.projects__item {
+  display: flex;
+  position: relative;
+  border: 10px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(134px);
+  overflow: hidden;
+}
+.projects__image {
+  width: 100%;
+  height: 100%;
+}
+.projects__tag {
+  position: absolute;
+  z-index: 11;
+  border-radius: 50px;
+  background: rgba(123, 76, 250, 0.6);
+  bottom: 13px;
+  left: 13px;
+  padding: 3px 15px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+}
+.projects__tag-inner {
+  display: flex;
+  width: 54px;
+  height: 2px;
+  background: #fff;
+}
+.projects__tag-date {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 126%;
+  gap: 13px;
+  margin-right: 25px;
+}
+.projects__controls {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-wrapper {
+  padding: 27px 0 50px 0;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+}
+.slider-controls__button {
+  border: 1px solid #fff;
+  border-radius: 70px;
+  padding: 16px 32px;
+}
+.slider-controls__button--next {
+  background: #fff;
+}
+.slider-controls__current {
+  text-decoration: underline;
 }
 
 .person-main {

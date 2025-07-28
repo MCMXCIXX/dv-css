@@ -1,0 +1,22 @@
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+
+  &__button {
+    border: 1px solid #fff;
+    border-radius: 70px;
+    padding: 16px 32px;
+    &--prev {
+    }
+    &--next {
+      background: #fff;
+    }
+  }
+  &__current {
+    text-decoration: underline;
+  }
+}
