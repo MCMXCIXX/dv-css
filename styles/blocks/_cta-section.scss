@@ -8,7 +8,7 @@
     color: #fff;
     display: flex;
     align-items: center;
-    gap: 44px;
+    gap: 30px;
     @include tablet {
       flex-direction: column;
       padding: 15px 16px;
@@ -17,7 +17,7 @@
   }
   &__title {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 130%;
     @include tablet {
       font-size: 25px;
@@ -25,8 +25,8 @@
   }
 }
 button.cta-section__button {
-  font-weight: 800;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 140%;
   display: flex;
   padding: 15px;
@@ -38,6 +38,8 @@ button.cta-section__button {
   align-items: center;
   gap: 10px;
   height: fit-content;
+  width: 100%;
+  max-width: fit-content;
   @include tablet {
     width: 100%;
     font-size: 14px;

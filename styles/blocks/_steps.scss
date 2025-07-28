@@ -1,0 +1,98 @@
+@use "../helpers" as *;
+
+
+.steps {
+  padding: 60px 0 50px 0;
+  margin-bottom: -40px;
+  background: linear-gradient(-30deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 111%;
+    text-align: center;
+    margin-bottom: 75px;
+    @include tablet {
+        font-size: 45px;
+        
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include tablet {
+        justify-content: center;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    gap: 15px;
+    max-width: 224px;
+    // box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    padding-top: 64px;
+    padding-bottom: 126px;
+    z-index: 1;
+
+    &-inner {
+      position: absolute;
+      inset: 0;
+      width: calc(100% + 16px);
+      height: 100%;
+      background-image: url(../images/new-main/item-bg.svg);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: flex;
+      padding-top: 10px;
+      justify-content: center;
+      width: 143px;
+      height: 110px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 32px;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+      left: -17px;
+      top: -34px;
+    }
+
+    &:nth-child(1)::after {
+      content: "01";
+      background-image: url(../images/new-main/tag-1.svg);
+    }
+    &:nth-child(2)::after {
+      content: "02";
+      background-image: url(../images/new-main/tag-2.svg);
+    }
+    &:nth-child(3)::after {
+      content: "03";
+      background-image: url(../images/new-main/tag-3.svg);
+    }
+    &:nth-child(4)::after {
+      content: "04";
+      background-image: url(../images/new-main/tag-4.svg);
+    }
+    &:nth-child(5)::after {
+      content: "05";
+      background-image: url(../images/new-main/tag-5.svg);
+    }
+    &:hover {
+      transform: translateY(-20px);
+    }
+  }
+}

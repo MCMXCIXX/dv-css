@@ -39,6 +39,9 @@
   }
   &__right-side {
     margin-bottom: 50px;
+    @include tablet {
+        margin-bottom: 20px;
+    }
   }
   &__btns-wrapper {
     display: grid;
