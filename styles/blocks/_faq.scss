@@ -1,0 +1,146 @@
+@use "../helpers" as *;
+
+.faq {
+  background-color: transparent;
+  &__title {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    margin-bottom: 48px;
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+  &__descr {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    margin-bottom: 20px;
+    @include tablet {
+      font-size: 15px;
+    }
+  }
+  &__inner {
+    padding: 49px 0 81px 0;
+    display: grid;
+    grid-template-columns: 1fr 45%;
+    gap: 84px;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+    }
+  }
+  &__buttons-wrapper {
+    padding-top: 20px;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+  }
+  &__list {
+    border-top: 1px solid #000;
+    max-height: 519px;
+    overflow-y: auto;
+  }
+  &__item {
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    &.active {
+      & .faq__item-head {
+        margin-bottom: 30px;
+      }
+      & .faq__dropdown {
+        display: block;
+      }
+      & .faq__item-head {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+  &__item-head {
+    position: relative;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    &::after {
+      content: "";
+      display: flex;
+      width: 14px;
+      height: 2px;
+      background: #000;
+      border-radius: 1px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+    &::before {
+      content: "";
+      display: flex;
+      width: 2px;
+      height: 14px;
+      background: #000;
+      border-radius: 1px;
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-6px);
+    }
+  }
+  &__dropdown {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 180%;
+    color: #878c91;
+    display: none;
+  }
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 180%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #010205;
+  }
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    border-radius: 50px;
+    padding: 17px 16px;
+    background-color: var(--main-purple);
+    color: #fff;
+  }
+}
+
+.faq__list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.faq__list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.faq__list::-webkit-scrollbar-thumb {
+  background: var(--main-green);
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+.faq__list::-webkit-scrollbar-thumb:hover {
+  background: var(--main-green);
+}
+
+/* Для Firefox и других (стандарты): применяем только если ::-webkit-scrollbar НЕ поддерживается */
+@supports not selector(::-webkit-scrollbar) {
+  .faq__list {
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-green) #f1f1f1;
+  }
+}

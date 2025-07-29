@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Onest";
   src: url(../fonts/Onest-Regular.woff2);
@@ -69,6 +70,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+.green-bg-wrapper {
+  background: linear-gradient(-30deg, #5ae9b4 0%, #fffa80 30.4%, #fff 52.4%);
+  padding-bottom: 90px;
+  margin-bottom: -80px;
 }
 
 html {
@@ -4671,6 +4678,152 @@ button.cta-section__button {
   }
 }
 
+.faq {
+  background-color: transparent;
+}
+.faq__title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 130%;
+  letter-spacing: -0.03em;
+  margin-bottom: 48px;
+}
+@media (max-width: 1023.98px) {
+  .faq__title {
+    font-size: 40px;
+  }
+}
+.faq__descr {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+@media (max-width: 1023.98px) {
+  .faq__descr {
+    font-size: 15px;
+  }
+}
+.faq__inner {
+  padding: 49px 0 81px 0;
+  display: grid;
+  grid-template-columns: 1fr 45%;
+  gap: 84px;
+}
+@media (max-width: 1023.98px) {
+  .faq__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+}
+.faq__buttons-wrapper {
+  padding-top: 20px;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+.faq__list {
+  border-top: 1px solid #000;
+  max-height: 519px;
+  overflow-y: auto;
+}
+.faq__item {
+  border-bottom: 1px solid #000;
+  padding: 20px;
+}
+.faq__item.active .faq__item-head {
+  margin-bottom: 30px;
+}
+.faq__item.active .faq__dropdown {
+  display: block;
+}
+.faq__item.active .faq__item-head::before {
+  display: none;
+}
+.faq__item-head {
+  position: relative;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+}
+.faq__item-head::after {
+  content: "";
+  display: flex;
+  width: 14px;
+  height: 2px;
+  background: #000;
+  border-radius: 1px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.faq__item-head::before {
+  content: "";
+  display: flex;
+  width: 2px;
+  height: 14px;
+  background: #000;
+  border-radius: 1px;
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-6px);
+}
+.faq__dropdown {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 180%;
+  color: #878c91;
+  display: none;
+}
+.faq__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 180%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #010205;
+}
+.faq__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  border-radius: 50px;
+  padding: 17px 16px;
+  background-color: var(--main-purple);
+  color: #fff;
+}
+
+.faq__list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.faq__list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.faq__list::-webkit-scrollbar-thumb {
+  background: var(--main-green);
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+.faq__list::-webkit-scrollbar-thumb:hover {
+  background: var(--main-green);
+}
+
+/* Для Firefox и других (стандарты): применяем только если ::-webkit-scrollbar НЕ поддерживается */
+@supports not selector(::-webkit-scrollbar) {
+  .faq__list {
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-green) #f1f1f1;
+  }
+}
 .person-main {
   background: linear-gradient(-35deg, #5ae9b4 0%, #fffa80 14.4%, #fff 25.4%);
   padding-bottom: 6.25rem;

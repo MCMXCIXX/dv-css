@@ -1702,7 +1702,7 @@ tr:not(:first-child) {
 }
 
 .faq {
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 .block_faq_title {
   font-size: 50px;
