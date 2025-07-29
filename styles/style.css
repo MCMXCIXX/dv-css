@@ -6931,7 +6931,7 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background: url("../img/blog/star-grey.png") center/cover no-repeat;
+  background: url("../images/blog/star-grey.png") center/cover no-repeat;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -6939,7 +6939,7 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
 .star.active,
 .star:hover,
 .star.hovered {
-  background: url("../img/blog/star-yellow.png") center/cover no-repeat;
+  background: url("../images/blog/star-yellow.png") center/cover no-repeat;
 }
 
 .feedback-block {
@@ -6962,10 +6962,10 @@ input:checked ~ .custom-checkbox .custom-checkbox__checked {
     flex-direction: column;
   }
 }
-.feedback-block label {
+.feedback-block__form-inner label {
   position: relative;
 }
-.feedback-block input {
+.feedback-block__form-inner input {
   background: #757575;
   height: 60px;
   width: 100%;

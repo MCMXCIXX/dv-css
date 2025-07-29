@@ -5,6 +5,15 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 180%;
+  &--green {
+    color: var(--main-green);
+    & .slider-controls__button {
+      border: 1px solid var(--main-green);
+      &--next {
+        background: var(--main-green);
+      }
+    }
+  }
 
   &__button {
     border: 1px solid #fff;

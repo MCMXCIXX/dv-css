@@ -774,6 +774,442 @@
           </div>
         </div>
       </section>
+
+      <section class="reviews-main">
+        <div class="container">
+          <h2 class="reviews-main__title"><span class="highlight">Отзывы</span> наших клиентов</h2>
+          <div class="reviews-main__inner">
+            <div class="reviews-main__block">
+              <p class="reviews-main__text">
+                “Обратились к команде за созданием сайта для нашей строительной компании — и остались полностью довольны результатом. Всё было чётко, поэтапно и без «воды»: с нас —
+                бриф, с них — качественный дизайн, грамотная структура и внимание к деталям. Сайт получился современным, информативным и адаптивным под мобильные устройства —
+                именно то, что нужно для привлечения клиентов.”
+              </p>
+              <div class="reviews-main__info">
+                <div class="reviews-main__author">
+                  <img
+                    src="./images/new-main/client.png"
+                    alt="Михаил Михайлов"
+                    class="reviews-main__author-ava"
+                  />
+                  <div class="reviews-main__author-info">
+                    <h3 class="reviews-main__name">Михаил Михайлов</h3>
+                    <p class="reviews-main__company">Команда VimStroy</p>
+                  </div>
+                </div>
+                <div class="reviews-main__controls">
+                  <div class="slider-controls slider-controls--green">
+                    <button class="slider-controls__button slider-controls__button--prev">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M19.0001 12.0039H5.00012"
+                          stroke="#0AA26A"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12.0001 5.00391L5.00012 12.0039L12.0001 19.0039"
+                          stroke="#0AA26A"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <span class="slider-controls__info"><span class="slider-controls__current">01</span>/<span class="slider-controls__total">05</span></span>
+                    <button class="slider-controls__button slider-controls__button--next">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.00012 12.0039H19.0001"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12.0001 5.00391L19.0001 12.0039L12.0001 19.0039"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-main__form">
+              <p class="reviews-main__descr">Оставьте, пожалуйста, отзыв и оценку о нашей работе — нам будет очень приятно и это поможет нам становиться лучше!</p>
+              <form class="">
+                <div
+                  class="rating"
+                  id="rating"
+                >
+                  <span
+                    class="star"
+                    data-value="1"
+                  ></span>
+                  <span
+                    class="star"
+                    data-value="2"
+                  ></span>
+                  <span
+                    class="star"
+                    data-value="3"
+                  ></span>
+                  <span
+                    class="star"
+                    data-value="4"
+                  ></span>
+                  <span
+                    class="star"
+                    data-value="5"
+                  ></span>
+                </div>
+                <input
+                  type="hidden"
+                  name="rating"
+                  id="rating-input"
+                  value="0"
+                />
+                <div class="feedback-block__form-inner">
+                  <label
+                    for="name6"
+                    class="input1"
+                  >
+                    <input
+                      class="input"
+                      id="name6"
+                      type="text"
+                      name="name"
+                      placeholder=""
+                      required=""
+                    />
+                    <span class="feedback-block__placeholder">Ваше имя<span class="color-red">*</span></span>
+                  </label>
+                  <label
+                    for="phone6"
+                    class="input2"
+                  >
+                    <input
+                      class="input feedback-block__input-50"
+                      type="tel"
+                      name="phone"
+                      id="phone6"
+                      placeholder=""
+                      required=""
+                    />
+                    <span class="feedback-block__placeholder">Ваш телефон<span class="color-red">*</span></span>
+                  </label>
+                  <label
+                    for="email6"
+                    class="input3"
+                  >
+                    <input
+                      class="input"
+                      type="email"
+                      name="email"
+                      id="email6"
+                      placeholder=""
+                      required=""
+                    />
+                    <span class="feedback-block__placeholder">Ваш email<span class="color-red">*</span></span>
+                  </label>
+                  <label
+                    for="message6"
+                    class="input4"
+                  >
+                    <input
+                      class="input"
+                      type="text"
+                      name="message"
+                      id="message6"
+                      placeholder=""
+                      required=""
+                    />
+                    <span class="feedback-block__placeholder">Оставьте свой комментарий<span></span></span>
+                  </label>
+                </div>
+                <label class="main-form__checkbox feedback-block__checkbox checkbox_privacy_policy">
+                  <input
+                    name="privacy"
+                    type="checkbox"
+                    required=""
+                  />
+                  <span class="custom-checkbox">
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 24 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="custom-checkbox__unchecked"
+                    >
+                      <path
+                        d="M8.76364 21H15.0181C20.2301 21 22.3149 19 22.3149 14V8C22.3149 3 20.2301 1 15.0181 1H8.76364C3.55161 1 1.4668 3 1.4668 8V14C1.4668 19 3.55161 21 8.76364 21Z"
+                        stroke="#7B4CFA"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </svg>
+                    <svg
+                      width="21"
+                      height="21"
+                      viewBox="0 0 21 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="custom-checkbox__checked"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.886719"
+                        width="20"
+                        height="20"
+                        rx="3"
+                        fill="#7B4CFA"
+                      ></rect>
+                      <path
+                        d="M10.0763 14.4101C9.58305 14.9513 8.74622 14.9948 8.19955 14.5077L6.00181 12.5495C5.46819 12.074 5.46817 11.2397 6.00177 10.7642C6.4551 10.3603 7.13923 10.3603 7.59256 10.7642L8.99021 12.0097L14.2991 6.18534C14.7137 5.73044 15.4038 5.65935 15.9025 6.02016C16.4875 6.44348 16.5739 7.28174 16.0874 7.81543L10.0763 14.4101Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </span>
+                  Я даю согласие на обработку моих персональных данных и соглашаюсь с политикой конфиденциальности
+                </label>
+                <button
+                  type="submit"
+                  class="main-form__submit feedback-block__submit submit-btn"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-border section-border--green team-wrapper">
+        <div class="container">
+          <div class="team">
+            <h2 class="team__title">Наша <span class="highlight">команда</span></h2>
+            <p class="team__subtitle">
+              Мы — команда специалистов, объединённых общими ценностями: качеством, ответственностью и вниманием к деталям. У каждого из нас — свой опыт и экспертиза, но вместе мы
+              превращаем идеи в работающие решения.
+            </p>
+            <ul class="team__list">
+              <li class="team__item">
+                <div class="team__avatar-wrapper">
+                  <img
+                    src="./images/new-main/aleksey.png"
+                    alt="Алексей Браш
+"
+                    class="team__avatar"
+                  />
+                  <div class="team__avatar-hover">
+                    <a
+                      href=""
+                      class="team__button-more"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+                <p class="team__post">Руководитель компании</p>
+                <p class="team__name">Алексей Браш</p>
+                <p class="team__position">Основатель / Директор / Лицо компании</p>
+              </li>
+              <li class="team__item">
+                <div class="team__avatar-wrapper">
+                  <img
+                    src="./images/new-main/ekaterina.png"
+                    alt="Екатерина Пономарёва
+"
+                    class="team__avatar"
+                  />
+                  <div class="team__avatar-hover">
+                    <a
+                      href=""
+                      class="team__button-more"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+                <p class="team__post">Клиент-менеджер</p>
+                <p class="team__name">Екатерина Пономарёва</p>
+                <p class="team__position">Менеджер по работе с клиентами / Коммуникационный мост / Голос компании</p>
+              </li>
+              <li class="team__item">
+                <div class="team__avatar-wrapper">
+                  <img
+                    src="./images/new-main/leo.png"
+                    alt="Леонид Мангилев
+
+"
+                    class="team__avatar"
+                  />
+                  <div class="team__avatar-hover">
+                    <a
+                      href=""
+                      class="team__button-more"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+                <p class="team__post">Главный программист, он же руководитель отдела производства</p>
+                <p class="team__name">Леонид Мангилев</p>
+                <p class="team__position">Технический директор / Руководитель разработки / Глава инженерной магии</p>
+              </li>
+              <li class="team__item">
+                <div class="team__avatar-wrapper">
+                  <img
+                    src="./images/new-main/denis.png"
+                    alt="Денис Четыркин
+
+
+"
+                    class="team__avatar"
+                  />
+                  <div class="team__avatar-hover">
+                    <a
+                      href=""
+                      class="team__button-more"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+                <p class="team__post">Программист</p>
+                <p class="team__name">Денис Четыркин</p>
+                <p class="team__position">Frontend-разработчик / Backend-мастер / Повелитель кода</p>
+              </li>
+              <li class="team__item">
+                <div class="team__avatar-wrapper">
+                  <img
+                    src="./images/new-main/oksana.png"
+                    alt="Оксана Цвелёва
+
+
+
+"
+                    class="team__avatar"
+                  />
+                  <div class="team__avatar-hover">
+                    <a
+                      href=""
+                      class="team__button-more"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+                <p class="team__post">Контент-менеджер с расширенной комплектацией</p>
+                <p class="team__name">Оксана Цвелёва</p>
+                <p class="team__position">Человек-оркестр: контент, дизайн и чуть-чуть код</p>
+              </li>
+            </ul>
+            <div class="team__pagination">
+              <button class="team__pagination-prev">
+                <svg
+                  width="16"
+                  height="12"
+                  viewBox="0 0 16 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.95192 11.6534L0.298096 5.99953L5.95192 0.345703L7.00575 1.4303L3.1865 5.24955H15.7019V6.7495H3.1865L7.00575 10.5688L5.95192 11.6534Z"
+                    fill="#108056"
+                  />
+                </svg>
+              </button>
+              <span class="team__pagination-index active"></span>
+              <span class="team__pagination-index"></span>
+              <span class="team__pagination-index"></span>
+              <button class="team__pagination-next">
+                <svg
+                  width="16"
+                  height="12"
+                  viewBox="0 0 16 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.0481 11.6534L15.7019 5.99953L10.0481 0.345703L8.99425 1.4303L12.8135 5.24955H0.298104V6.7495H12.8135L8.99425 10.5688L10.0481 11.6534Z"
+                    fill="#108056"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="container">
+          <h2 class="price__title">Сколько стоит <span class="highlight">создание</span> сайта?</h2>
+          <p class="price__descr">
+            <b>Стоимость сайта</b> зависит от ваших целей, пожеланий и технических требований. Нужен простой сайт-визитка или функциональный интернет-магазин? Хотите уникальный
+            дизайн или подойдёт шаблонное решение? Требуется интеграция с CRM, 1С, платёжными системами?
+          </p>
+          <p class="price__descr">
+            Мы подбираем решение под ваш бизнес и бюджет. Вы можете воспользоваться калькулятором и рассчитать примерную стоимость проекта. А чтобы получить точный расчёт — просто
+            оставьте заявку, и мы предложим оптимальный вариант.
+          </p>
+          <ul class="price__list">
+            <li class="price__item">
+              <h3 class="price__item-title">Тариф "Базовый"</h3>
+              <div class="price__value">
+                <svg
+                  width="32"
+                  height="30"
+                  viewBox="0 0 32 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.5646 0.00390712C11.3534 0.0107306 8.23418 1.07638 5.69009 3.03576C3.146 4.99513 1.31911 7.73884 0.492486 10.8418C-0.334142 13.9447 -0.114362 17.2337 1.11777 20.199C2.34991 23.1644 4.52561 25.6406 7.30778 27.2441C10.09 28.8475 13.3233 29.4887 16.5068 29.0682C19.6903 28.6477 22.6463 27.1891 24.9167 24.9182C27.1872 22.6474 28.6453 19.6912 29.0653 16.5076C29.4852 13.324 28.8435 10.0908 27.2396 7.30891C25.9531 5.08667 24.1047 3.24189 21.88 1.9597C19.6552 0.677514 17.1324 0.00301968 14.5646 0.00390712Z"
+                    fill="#FFE100"
+                  />
+                  <path
+                    d="M14.9602 19.5041C14.6097 19.5047 14.2701 19.3827 14.0002 19.1591L8.5402 14.6591C8.38831 14.5331 8.26276 14.3785 8.17073 14.204C8.0787 14.0294 8.02201 13.8385 8.00389 13.642C7.98578 13.4455 8.0066 13.2474 8.06517 13.059C8.12374 12.8706 8.2189 12.6956 8.3452 12.5441C8.48623 12.3747 8.66284 12.2386 8.86247 12.1452C9.0621 12.0519 9.27983 12.0037 9.5002 12.0041C9.85068 12.0034 10.1903 12.1254 10.4602 12.3491L14.9602 16.0241L29.0002 3.33406C29.2721 3.11583 29.6116 2.99914 29.9602 3.00406C30.2626 3.00484 30.5578 3.09703 30.8069 3.26853C31.056 3.44002 31.2474 3.68281 31.3561 3.96504C31.4648 4.24728 31.4856 4.55577 31.4158 4.85004C31.3461 5.14432 31.189 5.41064 30.9652 5.61406L15.9652 19.1141C15.6901 19.3641 15.332 19.5031 14.9602 19.5041Z"
+                    fill="#194FC6"
+                  />
+                </svg>
+                <span>от 25 000 ₽</span>
+              </div>
+              <p class="price__item-subtitle">Варианты: Landing Page / Сайт-визитка</p>
+              <ul class="price__inner-list">
+                <li class="price__inner-item">Индивидуальный адаптивный дизайн</li>
+                <li class="price__inner-item">Быстрая загрузка и мобильная версия</li>
+                <li class="price__inner-item">Установка формы заявки / звонка</li>
+                <li class="price__inner-item">Настройка аналитики/li></li>
+                <li class="price__inner-item">Подключение домена и хостинга</li>
+                <li class="price__inner-item">SEO-основа (заголовки, описание, фавикон)</li>
+              </ul>
+              <div class="price__image-wrapper">
+                <img
+                  src="./images/new-main/price-1.svg"
+                  alt=""
+                  class="price__image"
+                />
+              </div>
+              <div class="price__button">Заказать сайт</div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <section class="blog-main-block container">
       <h2 class="blog-main-block__title">Это <span class="blog-main-block__title-gradient">интересно</span> и полезно</h2>

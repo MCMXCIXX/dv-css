@@ -1,0 +1,117 @@
+@use "../helpers" as *;
+.team-wrapper {
+  overflow: hidden;
+}
+.team {
+  color: #fff;
+  padding: 54px 0 34px 0;
+
+  &__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 107%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 39px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: nowrap;
+    @include tablet {
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 280px;
+    text-align: center;
+    @include tablet {
+        min-width: 100%;
+    }
+  }
+  &__avatar-wrapper {
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 12px;
+    max-width: 192px;
+    max-height: 192px;
+    &:hover .team__avatar-hover {
+      top: 50%;
+    }
+  }
+  &__avatar-hover {
+    background: rgba(0, 191, 128, 0.76);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    top: 100%;
+    transition: top 0.2s ease;
+  }
+  &__avatar {
+    width: 100%;
+    height: 100%;
+  }
+  &__post {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    margin-bottom: 18px;
+  }
+  &__name {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    color: #beffb1;
+  }
+  &__position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__button-more {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    border-radius: 100px;
+    padding: 10px 28px;
+    background: var(--main-purple);
+  }
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    margin-top: 48px;
+  }
+  &__pagination-index {
+    cursor: pointer;
+    display: flex;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(77, 193, 150, 0.45);
+    &.active {
+      width: 12px;
+      height: 12px;
+      background-color: #4dc196;
+    }
+  }
+  &__pagination-prev {
+    display: flex;
+    align-items: center;
+  }
+}
