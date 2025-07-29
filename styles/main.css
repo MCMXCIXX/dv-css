@@ -48,6 +48,9 @@
   padding: 0 0.3125rem;
   white-space: nowrap;
 }
+.highlight.highlight--purple {
+  background: var(--main-purple);
+}
 
 .color-red {
   color: #df1a1a;
@@ -55,6 +58,7 @@
 
 .section-border {
   border-radius: 32px;
+  position: relative;
 }
 .section-border--green {
   background: linear-gradient(180deg, #0f4157 4.81%, #00bf80 41.83%, #2a2525 93.75%);
@@ -4566,6 +4570,104 @@ button.cta-section__button {
     display: flex;
     flex-direction: column;
     gap: 1px;
+  }
+}
+
+.order {
+  background: linear-gradient(90deg, rgba(77, 193, 150, 0.98) 57.21%, rgba(123, 76, 250, 0.28) 100%);
+  padding: 60px 0 30px 0;
+  margin-top: -30px;
+  z-index: -1;
+  color: #fff;
+}
+.order__inner {
+  display: grid;
+  grid-template-columns: 1fr 42%;
+  gap: 80px;
+  align-items: center;
+}
+@media (max-width: 1023.98px) {
+  .order__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.order__title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 125%;
+  margin-bottom: 20px;
+}
+@media (max-width: 1023.98px) {
+  .order__title {
+    font-size: 40px;
+  }
+}
+.order__contacts {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 162%;
+}
+@media (max-width: 1023.98px) {
+  .order__contacts {
+    font-size: 20px;
+  }
+}
+
+.application {
+  padding: 40px;
+  border-radius: 20px;
+  background: #fff;
+  color: #000;
+}
+@media (max-width: 1023.98px) {
+  .application {
+    padding: 20px;
+  }
+}
+.application__title {
+  font-weight: 700;
+  font-size: 23px;
+  text-align: center;
+  background-position: 10px;
+  margin-bottom: 20px;
+}
+.application__descr {
+  font-weight: 500;
+  font-size: 14px;
+  color: #5d5d5d;
+  margin-bottom: 61px;
+}
+.application__form {
+  display: flex;
+  flex-direction: column;
+}
+.application__lable {
+  font-weight: 400;
+  font-size: 14px;
+  color: #5d5d5d;
+}
+.application__input {
+  width: 100%;
+  height: 42px;
+  border-bottom: 1px solid #ecedf2;
+  margin-bottom: 24px;
+}
+.application__button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 118%;
+  border-radius: 12px;
+  padding: 12px 56px;
+  background: var(--main-purple);
+  color: #fff;
+  width: fit-content;
+  align-self: flex-end;
+}
+@media (max-width: 1023.98px) {
+  .application__button {
+    align-self: center;
   }
 }
 

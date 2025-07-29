@@ -27,13 +27,18 @@
   background: linear-gradient(90deg, #7b4cfa 0%, #1edd90 100%);
   padding: 0 rem(5);
   white-space: nowrap;
+  &.highlight--purple {
+    background: var(--main-purple);
+  }
 }
+
 .color-red {
   color: #df1a1a;
 }
 
 .section-border {
   border-radius: 32px;
+  position: relative;
   &--green {
     background: linear-gradient(180deg, #0f4157 4.81%, #00bf80 41.83%, #2a2525 93.75%);
     border: 1px solid #538b62;

@@ -1,0 +1,38 @@
+@use "../helpers" as *;
+
+.order {
+  background: linear-gradient(90deg, rgba(77, 193, 150, 0.98) 57.21%, rgba(123, 76, 250, 0.28) 100%);
+  padding: 60px 0 30px 0;
+  margin-top: -30px;
+  z-index: -1;
+  color: #fff;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 42%;
+    gap: 80px;
+    align-items: center;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 125%;
+    margin-bottom: 20px;
+    @include tablet {
+      font-size: 40px;
+    }
+  }
+  &__contacts {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 162%;
+    @include tablet {
+        font-size: 20px;
+    }
+  }
+}
